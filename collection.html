@@ -1,0 +1,2107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HERITAGE APPAREL | Women's Collections</title>
+    <meta
+      name="description"
+      content="Shop HERITAGE APPAREL collections — elegant Nigerian women's fashion, ready-to-wear dresses, iro & buba, kaftans, aso-ebi, adire and ankara styles."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind = {
+        config: {
+          theme: {
+            extend: {
+              colors: {
+                heritage: {
+                  gold: "#C8A23C",
+                  darkgold: "#A68526",
+                  green: "#1B5E20",
+                  deepgreen: "#0D3B12",
+                  terracotta: "#C75B39",
+                  cream: "#FFF8E7",
+                  brown: "#3E2723",
+                  sand: "#F5E6C8",
+                  blush: "#F9DDD3",
+                },
+              },
+              fontFamily: {
+                display: ["Playfair Display", "serif"],
+                body: ["Inter", "sans-serif"],
+                elegant: ["Cormorant Garamond", "serif"],
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: #fff8e7;
+        color: #3e2723;
+        overflow-x: hidden;
+      }
+
+      ::selection {
+        background: rgba(200, 162, 60, 0.35);
+      }
+
+      ::-webkit-scrollbar {
+        width: 9px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #fff8e7;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #c8a23c;
+        border-radius: 999px;
+      }
+
+      .font-display {
+        font-family: "Playfair Display", serif;
+      }
+
+      .font-elegant {
+        font-family: "Cormorant Garamond", serif;
+      }
+
+      .african-border {
+        height: 5px;
+        background: repeating-linear-gradient(
+          90deg,
+          #c8a23c 0,
+          #c8a23c 14px,
+          #c75b39 14px,
+          #c75b39 28px,
+          #1b5e20 28px,
+          #1b5e20 42px,
+          #3e2723 42px,
+          #3e2723 56px
+        );
+      }
+
+      .hero-pattern {
+        background:
+          radial-gradient(
+            circle at 12% 22%,
+            rgba(200, 162, 60, 0.18) 0,
+            transparent 28%
+          ),
+          radial-gradient(
+            circle at 84% 18%,
+            rgba(199, 91, 57, 0.14) 0,
+            transparent 25%
+          ),
+          radial-gradient(
+            circle at 52% 78%,
+            rgba(27, 94, 32, 0.1) 0,
+            transparent 34%
+          ),
+          linear-gradient(135deg, #fff8e7 0%, #f5e6c8 52%, #fff8e7 100%);
+      }
+
+      .pattern-mask {
+        background-image:
+          linear-gradient(45deg, rgba(62, 39, 35, 0.05) 25%, transparent 25%),
+          linear-gradient(-45deg, rgba(62, 39, 35, 0.05) 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, rgba(62, 39, 35, 0.05) 75%),
+          linear-gradient(-45deg, transparent 75%, rgba(62, 39, 35, 0.05) 75%);
+        background-size: 24px 24px;
+        background-position:
+          0 0,
+          0 12px,
+          12px -12px,
+          -12px 0;
+      }
+
+      .glass {
+        background: rgba(255, 248, 231, 0.76);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid rgba(200, 162, 60, 0.22);
+      }
+
+      .nav-scrolled {
+        background: rgba(255, 248, 231, 0.94);
+        box-shadow: 0 18px 50px rgba(62, 39, 35, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #c8a23c, #a68526);
+        color: white;
+        transition: all 0.25s ease;
+        box-shadow: 0 14px 32px rgba(200, 162, 60, 0.24);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 42px rgba(200, 162, 60, 0.34);
+        background: linear-gradient(135deg, #d5b250, #9c7a1f);
+      }
+
+      .btn-outline {
+        border: 1.5px solid rgba(200, 162, 60, 0.9);
+        color: #7b5e14;
+        transition: all 0.25s ease;
+      }
+
+      .btn-outline:hover,
+      .btn-outline.active {
+        background: #c8a23c;
+        color: #fff;
+        box-shadow: 0 12px 30px rgba(200, 162, 60, 0.22);
+      }
+
+      .product-card {
+        transition:
+          transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+          box-shadow 0.35s ease,
+          border-color 0.35s ease;
+      }
+
+      .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 24px 70px rgba(62, 39, 35, 0.14);
+        border-color: rgba(200, 162, 60, 0.48);
+      }
+
+      .product-card:hover .product-visual {
+        transform: scale(1.045);
+      }
+
+      .product-card:hover .quick-panel {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .product-visual {
+        transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .product-visual::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.22) 2px,
+            transparent 2px
+          ),
+          radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.13) 1px,
+            transparent 1px
+          );
+        background-size:
+          28px 28px,
+          14px 14px;
+        background-position:
+          0 0,
+          7px 7px;
+        opacity: 0.8;
+      }
+
+      .product-visual::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(62, 39, 35, 0.2),
+          transparent 60%
+        );
+      }
+
+      .fabric-1 {
+        background: linear-gradient(
+          135deg,
+          #c75b39 0%,
+          #e89463 43%,
+          #c8a23c 100%
+        );
+      }
+      .fabric-2 {
+        background: linear-gradient(
+          135deg,
+          #123f16 0%,
+          #1b5e20 47%,
+          #c8a23c 100%
+        );
+      }
+      .fabric-3 {
+        background: linear-gradient(
+          135deg,
+          #3e2723 0%,
+          #785146 50%,
+          #d7b74e 100%
+        );
+      }
+      .fabric-4 {
+        background: linear-gradient(
+          135deg,
+          #c8a23c 0%,
+          #f3ce66 48%,
+          #c75b39 100%
+        );
+      }
+      .fabric-5 {
+        background: linear-gradient(
+          135deg,
+          #182f18 0%,
+          #c8a23c 46%,
+          #5f332c 100%
+        );
+      }
+      .fabric-6 {
+        background: linear-gradient(
+          135deg,
+          #7c1d1d 0%,
+          #c75b39 46%,
+          #f1c75b 100%
+        );
+      }
+      .fabric-7 {
+        background: linear-gradient(
+          135deg,
+          #1f3578 0%,
+          #526cc0 48%,
+          #c8a23c 100%
+        );
+      }
+      .fabric-8 {
+        background: linear-gradient(
+          135deg,
+          #651c51 0%,
+          #a83786 45%,
+          #e2b849 100%
+        );
+      }
+      .fabric-9 {
+        background: linear-gradient(
+          135deg,
+          #0d3b12 0%,
+          #267c38 42%,
+          #f5e6c8 100%
+        );
+      }
+      .fabric-10 {
+        background: linear-gradient(
+          135deg,
+          #2d1b18 0%,
+          #7e3b2d 46%,
+          #c8a23c 100%
+        );
+      }
+      .fabric-11 {
+        background: linear-gradient(
+          135deg,
+          #0c4a6e 0%,
+          #38a3c5 45%,
+          #f4c85a 100%
+        );
+      }
+      .fabric-12 {
+        background: linear-gradient(
+          135deg,
+          #741a1a 0%,
+          #e0503e 48%,
+          #1b5e20 100%
+        );
+      }
+
+      .dress-icon {
+        position: relative;
+        z-index: 2;
+        filter: drop-shadow(0 18px 24px rgba(62, 39, 35, 0.22));
+      }
+
+      .quick-panel {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: all 0.25s ease;
+      }
+
+      .badge {
+        background: rgba(255, 248, 231, 0.92);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        box-shadow: 0 10px 25px rgba(62, 39, 35, 0.1);
+      }
+
+      .filter-chip {
+        white-space: nowrap;
+      }
+
+      .filter-chip.active {
+        background: #3e2723;
+        color: #fff8e7;
+        border-color: #3e2723;
+      }
+
+      .size-btn {
+        transition: all 0.2s ease;
+      }
+
+      .size-btn.active,
+      .size-btn:hover {
+        background: #c8a23c;
+        border-color: #c8a23c;
+        color: white;
+      }
+
+      /* Cart Sidebar */
+      .cart-overlay {
+        transition: opacity 0.3s ease;
+      }
+      .cart-overlay.open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .cart-sidebar {
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .cart-sidebar.open {
+        transform: translateX(0);
+      }
+
+      .mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.32s ease;
+      }
+
+      .mobile-menu.open {
+        max-height: 360px;
+      }
+
+      .toast {
+        animation:
+          toastIn 0.25s ease forwards,
+          toastOut 0.35s ease 2.55s forwards;
+      }
+
+      @keyframes toastIn {
+        from {
+          opacity: 0;
+          transform: translateY(-12px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes toastOut {
+        to {
+          opacity: 0;
+          transform: translateY(-12px) scale(0.98);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(28px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .floaty {
+        animation: float 4.2s ease-in-out infinite;
+      }
+
+      .reveal {
+        animation: fadeInUp 0.75s ease both;
+      }
+      /* Badge pulse */
+      .cart-badge {
+        animation: pulse-gold 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        40% {
+          transform: scale(1.22);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .no-scroll {
+        overflow: hidden;
+      }
+
+      .select-clean {
+        appearance: none;
+        background-image:
+          linear-gradient(45deg, transparent 50%, #3e2723 50%),
+          linear-gradient(135deg, #3e2723 50%, transparent 50%);
+        background-position:
+          calc(100% - 18px) calc(50% - 3px),
+          calc(100% - 13px) calc(50% - 3px);
+        background-size:
+          5px 5px,
+          5px 5px;
+        background-repeat: no-repeat;
+      }
+
+      @media (max-width: 768px) {
+        .quick-panel {
+          opacity: 1;
+          transform: none;
+        }
+
+        .product-card:hover {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="african-border"></div>
+
+    <!-- Navigation -->
+    <nav
+      id="navbar"
+      class="sticky top-0 z-50 bg-heritage-cream/80 backdrop-blur-md transition-all duration-300"
+    >
+      <div class="african-border"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a href="#" class="flex items-center gap-2">
+            <div
+              class="w-10 h-10 bg-heritage-gold rounded-full flex items-center justify-center"
+            >
+              <span class="text-white font-display font-bold text-lg">H</span>
+            </div>
+            <div>
+              <h1
+                class="font-display font-bold text-xl tracking-wide text-heritage-brown leading-tight"
+              >
+                HERITAGE
+              </h1>
+              <p
+                class="text-[10px] tracking-[0.3em] text-heritage-gold font-body uppercase -mt-0.5"
+              >
+                Apparel
+              </p>
+            </div>
+          </a>
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="#home"
+              class="font-body text-sm tracking-wider hover:text-heritage-gold transition-colors relative group"
+            >
+              HOME
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-heritage-gold transition-all group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="collection.html"
+              class="font-body text-sm tracking-wider hover:text-heritage-gold transition-colors relative group"
+            >
+              COLLECTIONS
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-heritage-gold transition-all group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="#shop"
+              class="font-body text-sm tracking-wider hover:text-heritage-gold transition-colors relative group"
+            >
+              SHOP
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-heritage-gold transition-all group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="#about"
+              class="font-body text-sm tracking-wider hover:text-heritage-gold transition-colors relative group"
+            >
+              ABOUT
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-heritage-gold transition-all group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="#testimonials"
+              class="font-body text-sm tracking-wider hover:text-heritage-gold transition-colors relative group"
+            >
+              REVIEWS
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-heritage-gold transition-all group-hover:w-full"
+              ></span>
+            </a>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="flex items-center gap-4">
+            <!-- Search -->
+            <button
+              class="hidden md:block p-2 hover:text-heritage-gold transition-colors"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            <!-- Wishlist -->
+            <button
+              class="hidden md:block p-2 hover:text-heritage-gold transition-colors relative"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                />
+              </svg>
+            </button>
+            <!-- Cart -->
+            <button
+              id="openCartBtn"
+              onclick="toggleCart()"
+              class="p-2 hover:text-heritage-gold transition-colors relative"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                />
+              </svg>
+              <span
+                id="cart-count"
+                class="absolute -top-1 -right-1 w-5 h-5 bg-heritage-terracotta text-white text-xs rounded-full flex items-center justify-center font-bold hidden"
+                >0</span
+              >
+            </button>
+            <!-- Mobile Menu Toggle -->
+            <button
+              id="menuBtn"
+              onclick="toggleMobileMenu()"
+              class="md:hidden p-2"
+              aria-label="Toggle mobile menu"
+            >
+              <svg
+                id="menu-icon"
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                id="close-icon"
+                class="w-6 h-6 hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu md:hidden max-h-0 overflow-hidden bg-heritage-cream border-t border-heritage-sand"
+      >
+        <div class="px-6 py-4 space-y-4">
+          <a
+            href="#home"
+            onclick="toggleMobileMenu()"
+            class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold"
+            >HOME</a
+          >
+          <a
+            href="#collections"
+            onclick="toggleMobileMenu()"
+            class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold"
+            >COLLECTIONS</a
+          >
+          <a
+            href="#shop"
+            onclick="toggleMobileMenu()"
+            class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold"
+            >SHOP</a
+          >
+          <a
+            href="#about"
+            onclick="toggleMobileMenu()"
+            class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold"
+            >ABOUT</a
+          >
+          <a
+            href="#testimonials"
+            onclick="toggleMobileMenu()"
+            class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold"
+            >REVIEWS</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section
+        class="hero-pattern pattern-mask min-h-[620px] pt-32 lg:pt-40 pb-16 relative overflow-hidden"
+      >
+        <div
+          class="absolute top-28 right-10 w-28 h-28 rounded-full bg-heritage-gold/20 blur-2xl"
+        ></div>
+        <div
+          class="absolute bottom-10 left-8 w-36 h-36 rounded-full bg-heritage-terracotta/15 blur-3xl"
+        ></div>
+
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center relative z-10"
+        >
+          <div class="reveal">
+            <div
+              class="inline-flex items-center gap-2 rounded-full bg-white/70 border border-heritage-gold/30 px-4 py-2 shadow-sm mb-7"
+            >
+              <span class="w-2.5 h-2.5 rounded-full bg-heritage-green"></span>
+              <span
+                class="text-xs sm:text-sm font-bold tracking-wide uppercase text-heritage-brown"
+                >Women’s Nigerian Fashion Collections</span
+              >
+            </div>
+
+            <h1
+              class="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[.93] text-heritage-brown"
+            >
+              Wear your
+              <span class="block text-heritage-darkgold">Heritage</span>
+              beautifully.
+            </h1>
+
+            <p
+              class="mt-6 max-w-xl text-base sm:text-lg text-heritage-brown/75 leading-8"
+            >
+              Explore HERITAGE APPAREL’s curated women’s collection — modern
+              silhouettes inspired by Ankara, Adire, Aso-Oke and timeless
+              Nigerian elegance.
+            </p>
+
+            <div class="mt-9 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#collections"
+                class="btn-primary rounded-full px-8 py-4 font-bold text-center"
+                >Shop Collections</a
+              >
+              <a
+                href="#size-guide"
+                class="btn-outline rounded-full px-8 py-4 font-bold text-center bg-white/40"
+                >View Size Guide</a
+              >
+            </div>
+
+            <div class="mt-10 grid grid-cols-3 max-w-lg gap-4">
+              <div class="glass rounded-3xl p-4 text-center">
+                <div class="font-display text-3xl text-heritage-brown">12</div>
+                <div
+                  class="text-xs font-bold text-heritage-brown/60 uppercase tracking-wide"
+                >
+                  Styles
+                </div>
+              </div>
+              <div class="glass rounded-3xl p-4 text-center">
+                <div class="font-display text-3xl text-heritage-brown">
+                  XS–XXL
+                </div>
+                <div
+                  class="text-xs font-bold text-heritage-brown/60 uppercase tracking-wide"
+                >
+                  Sizes
+                </div>
+              </div>
+              <div class="glass rounded-3xl p-4 text-center">
+                <div class="font-display text-3xl text-heritage-brown">
+                  100%
+                </div>
+                <div
+                  class="text-xs font-bold text-heritage-brown/60 uppercase tracking-wide"
+                >
+                  Women
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative reveal" style="animation-delay: 0.15s">
+            <div
+              class="absolute -top-7 -left-4 glass rounded-3xl px-5 py-4 shadow-xl z-20 floaty hidden sm:block"
+            >
+              <p
+                class="text-xs font-bold uppercase tracking-widest text-heritage-darkgold"
+              >
+                New Drop
+              </p>
+              <p class="font-display text-xl text-heritage-brown">Lagos Muse</p>
+            </div>
+
+            <div
+              class="rounded-[2.5rem] bg-heritage-brown p-3 shadow-2xl rotate-1"
+            >
+              <div
+                class="rounded-[2rem] overflow-hidden fabric-4 min-h-[520px] relative product-visual"
+              >
+                <div class="absolute inset-0 bg-black/5"></div>
+                <svg
+                  class="dress-icon absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[76%] max-w-[390px]"
+                  viewBox="0 0 280 420"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M98 24C116 42 166 42 184 24L204 70L178 88L224 382C178 405 102 405 56 382L102 88L76 70L98 24Z"
+                    fill="rgba(255,248,231,.86)"
+                  />
+                  <path
+                    d="M108 41C126 53 157 53 174 41L163 88H119L108 41Z"
+                    fill="rgba(62,39,35,.9)"
+                  />
+                  <path
+                    d="M103 105H180L208 367C170 383 111 383 72 367L103 105Z"
+                    fill="rgba(199,91,57,.26)"
+                  />
+                  <path
+                    d="M86 171C120 145 159 145 194 171"
+                    stroke="rgba(62,39,35,.55)"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M82 226C119 201 160 201 198 226"
+                    stroke="rgba(200,162,60,.75)"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M76 286C118 263 163 263 205 286"
+                    stroke="rgba(27,94,32,.55)"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+
+                <div
+                  class="absolute left-6 bottom-6 right-6 z-10 glass rounded-3xl p-5"
+                >
+                  <div class="flex items-end justify-between gap-4">
+                    <div>
+                      <p
+                        class="text-xs font-bold uppercase tracking-[.25em] text-heritage-darkgold"
+                      >
+                        Featured Look
+                      </p>
+                      <h2
+                        class="font-display text-2xl sm:text-3xl text-heritage-brown mt-1"
+                      >
+                        Golden Ankara Wrap Dress
+                      </h2>
+                    </div>
+                    <button
+                      class="btn-primary rounded-full px-5 py-3 font-bold add-featured whitespace-nowrap"
+                      data-id="ankara-wrap-dress"
+                    >
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute -bottom-8 -right-2 sm:right-4 glass rounded-3xl p-5 shadow-xl z-20"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="h-12 w-12 rounded-full bg-heritage-green text-white grid place-items-center"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-bold text-heritage-brown">Ready to Wear</p>
+                  <p class="text-sm text-heritage-brown/60">
+                    Nationwide delivery
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="collections" class="py-20 bg-heritage-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10"
+          >
+            <div>
+              <p
+                class="text-sm font-extrabold uppercase tracking-[.28em] text-heritage-darkgold mb-3"
+              >
+                Collections Page
+              </p>
+              <h2
+                class="font-display text-4xl sm:text-5xl lg:text-6xl text-heritage-brown"
+              >
+                Women’s Collections
+              </h2>
+              <p class="mt-4 text-heritage-brown/70 max-w-2xl leading-7">
+                Shop premium pieces designed for Nigerian women — from everyday
+                elegance to statement occasion wear.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <button
+                id="clearFilters"
+                class="rounded-full px-5 py-3 bg-white border border-heritage-gold/30 text-sm font-bold text-heritage-brown hover:bg-heritage-sand transition"
+              >
+                Clear
+              </button>
+              <button
+                id="openCartBtn2"
+                class="btn-primary rounded-full px-6 py-3 font-bold text-sm"
+              >
+                View Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="glass rounded-[2rem] p-4 sm:p-5 mb-10 shadow-sm">
+            <div class="grid lg:grid-cols-[1.2fr_.55fr_.45fr] gap-4">
+              <label class="relative block">
+                <span class="sr-only">Search collection</span>
+                <svg
+                  class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-heritage-brown/45"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 110-15 7.5 7.5 0 010 15z"
+                  />
+                </svg>
+                <input
+                  id="searchInput"
+                  type="search"
+                  placeholder="Search dresses, kaftans, iro & buba..."
+                  class="w-full h-14 rounded-2xl bg-white/80 border border-heritage-gold/20 pl-12 pr-4 outline-none focus:border-heritage-gold focus:ring-4 focus:ring-heritage-gold/10 transition text-heritage-brown placeholder:text-heritage-brown/40"
+                />
+              </label>
+
+              <select
+                id="sortSelect"
+                class="select-clean h-14 rounded-2xl bg-white/80 border border-heritage-gold/20 px-4 pr-10 outline-none focus:border-heritage-gold focus:ring-4 focus:ring-heritage-gold/10 transition text-heritage-brown font-semibold"
+              >
+                <option value="featured">Sort: Featured</option>
+                <option value="newest">Newest Arrivals</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="rating">Top Rated</option>
+              </select>
+
+              <select
+                id="sizeFilter"
+                class="select-clean h-14 rounded-2xl bg-white/80 border border-heritage-gold/20 px-4 pr-10 outline-none focus:border-heritage-gold focus:ring-4 focus:ring-heritage-gold/10 transition text-heritage-brown font-semibold"
+              >
+                <option value="all">All Sizes</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+
+            <div class="mt-5 overflow-x-auto pb-1">
+              <div id="categoryFilters" class="flex gap-3 min-w-max">
+                <button
+                  class="filter-chip active rounded-full px-5 py-3 bg-white border border-heritage-gold/25 font-bold text-sm transition"
+                  data-category="all"
+                >
+                  All Women’s Wear
+                </button>
+                <button
+                  class="filter-chip rounded-full px-5 py-3 bg-white border border-heritage-gold/25 font-bold text-sm transition"
+                  data-category="Dresses"
+                >
+                  Dresses
+                </button>
+                <button
+                  class="filter-chip rounded-full px-5 py-3 bg-white border border-heritage-gold/25 font-bold text-sm transition"
+                  data-category="Kaftans"
+                >
+                  Kaftans
+                </button>
+                <button
+                  class="filter-chip rounded-full px-5 py-3 bg-white border border-heritage-gold/25 font-bold text-sm transition"
+                  data-category="Iro & Buba"
+                >
+                  Iro & Buba
+                </button>
+                <button
+                  class="filter-chip rounded-full px-5 py-3 bg-white border border-heritage-gold/25 font-bold text-sm transition"
+                  data-category="Aso-Ebi"
+                >
+                  Aso-Ebi
+                </button>
+                <button
+                  class="filter-chip rounded-full px-5 py-3 bg-white border border-heritage-gold/25 font-bold text-sm transition"
+                  data-category="Workwear"
+                >
+                  Workwear
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between mb-7">
+            <p id="resultCount" class="font-bold text-heritage-brown/70">
+              Showing 12 styles
+            </p>
+            <p class="hidden sm:block text-sm text-heritage-brown/50">
+              Select a size on any item before adding to cart.
+            </p>
+          </div>
+
+          <div
+            id="productGrid"
+            class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"
+          ></div>
+
+          <div id="emptyState" class="hidden text-center py-20">
+            <div
+              class="mx-auto h-20 w-20 rounded-full bg-heritage-sand grid place-items-center mb-5"
+            >
+              <svg
+                class="w-9 h-9 text-heritage-brown/60"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 110-15 7.5 7.5 0 010 15z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-display text-3xl text-heritage-brown">
+              No styles found
+            </h3>
+            <p class="mt-2 text-heritage-brown/60">
+              Try another category, size, or search term.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="new-arrivals"
+        class="py-20 bg-heritage-brown text-heritage-cream overflow-hidden relative"
+      >
+        <div class="absolute inset-0 opacity-10 pattern-mask"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p
+                class="text-sm font-extrabold uppercase tracking-[.28em] text-heritage-gold mb-3"
+              >
+                Fresh from the atelier
+              </p>
+              <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl">
+                The Lagos Muse Edit
+              </h2>
+              <p class="mt-5 text-heritage-cream/75 leading-8 max-w-xl">
+                New silhouettes made for weddings, brunches, workdays and
+                celebrations. Each garment blends contemporary tailoring with
+                West African textile storytelling.
+              </p>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-4">
+              <div
+                class="rounded-[2rem] p-5 bg-white/10 border border-white/10"
+              >
+                <div class="font-display text-5xl text-heritage-gold">01</div>
+                <h3 class="font-bold mt-4">Premium Fabrics</h3>
+                <p class="text-sm text-heritage-cream/65 mt-2 leading-6">
+                  Ankara, Adire, lace, crepe and hand-selected trims.
+                </p>
+              </div>
+              <div
+                class="rounded-[2rem] p-5 bg-white/10 border border-white/10"
+              >
+                <div class="font-display text-5xl text-heritage-gold">02</div>
+                <h3 class="font-bold mt-4">Women First</h3>
+                <p class="text-sm text-heritage-cream/65 mt-2 leading-6">
+                  Cuts created for feminine comfort, confidence and movement.
+                </p>
+              </div>
+              <div
+                class="rounded-[2rem] p-5 bg-white/10 border border-white/10"
+              >
+                <div class="font-display text-5xl text-heritage-gold">03</div>
+                <h3 class="font-bold mt-4">Made in Nigeria</h3>
+                <p class="text-sm text-heritage-cream/65 mt-2 leading-6">
+                  Designed with pride by a Nigerian fashion studio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="size-guide" class="py-20 bg-heritage-sand/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-10 items-start">
+            <div>
+              <p
+                class="text-sm font-extrabold uppercase tracking-[.28em] text-heritage-darkgold mb-3"
+              >
+                Perfect Fit
+              </p>
+              <h2 class="font-display text-4xl sm:text-5xl text-heritage-brown">
+                Women’s Size Guide
+              </h2>
+              <p class="mt-4 text-heritage-brown/70 leading-7">
+                Use our standard guide for ready-to-wear pieces. For bespoke
+                fittings, contact the atelier after checkout.
+              </p>
+            </div>
+
+            <div
+              class="bg-white/80 rounded-[2rem] border border-heritage-gold/20 overflow-hidden shadow-sm"
+            >
+              <div class="overflow-x-auto">
+                <table class="w-full text-left min-w-[620px]">
+                  <thead class="bg-heritage-brown text-heritage-cream">
+                    <tr>
+                      <th class="px-6 py-4 text-sm uppercase tracking-wide">
+                        Size
+                      </th>
+                      <th class="px-6 py-4 text-sm uppercase tracking-wide">
+                        Bust
+                      </th>
+                      <th class="px-6 py-4 text-sm uppercase tracking-wide">
+                        Waist
+                      </th>
+                      <th class="px-6 py-4 text-sm uppercase tracking-wide">
+                        Hips
+                      </th>
+                      <th class="px-6 py-4 text-sm uppercase tracking-wide">
+                        UK
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="divide-y divide-heritage-gold/15 text-heritage-brown/75"
+                  >
+                    <tr>
+                      <td class="px-6 py-4 font-bold text-heritage-brown">
+                        XS
+                      </td>
+                      <td class="px-6 py-4">32–33"</td>
+                      <td class="px-6 py-4">24–25"</td>
+                      <td class="px-6 py-4">34–35"</td>
+                      <td class="px-6 py-4">6</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-bold text-heritage-brown">S</td>
+                      <td class="px-6 py-4">34–35"</td>
+                      <td class="px-6 py-4">26–27"</td>
+                      <td class="px-6 py-4">36–37"</td>
+                      <td class="px-6 py-4">8</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-bold text-heritage-brown">M</td>
+                      <td class="px-6 py-4">36–37"</td>
+                      <td class="px-6 py-4">28–29"</td>
+                      <td class="px-6 py-4">38–40"</td>
+                      <td class="px-6 py-4">10</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-bold text-heritage-brown">L</td>
+                      <td class="px-6 py-4">38–40"</td>
+                      <td class="px-6 py-4">30–32"</td>
+                      <td class="px-6 py-4">41–43"</td>
+                      <td class="px-6 py-4">12</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-bold text-heritage-brown">
+                        XL
+                      </td>
+                      <td class="px-6 py-4">41–43"</td>
+                      <td class="px-6 py-4">33–35"</td>
+                      <td class="px-6 py-4">44–46"</td>
+                      <td class="px-6 py-4">14</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-bold text-heritage-brown">
+                        XXL
+                      </td>
+                      <td class="px-6 py-4">44–46"</td>
+                      <td class="px-6 py-4">36–38"</td>
+                      <td class="px-6 py-4">47–49"</td>
+                      <td class="px-6 py-4">16</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="atelier" class="py-20 bg-heritage-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="rounded-[2.5rem] hero-pattern border border-heritage-gold/25 p-8 sm:p-12 lg:p-14 shadow-sm overflow-hidden relative"
+          >
+            <div
+              class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-heritage-gold/20 blur-3xl"
+            ></div>
+            <div
+              class="relative z-10 grid lg:grid-cols-[1.1fr_.9fr] gap-10 items-center"
+            >
+              <div>
+                <p
+                  class="text-sm font-extrabold uppercase tracking-[.28em] text-heritage-darkgold mb-3"
+                >
+                  HERITAGE APPAREL Atelier
+                </p>
+                <h2
+                  class="font-display text-4xl sm:text-5xl lg:text-6xl text-heritage-brown"
+                >
+                  Designed for the modern Nigerian woman.
+                </h2>
+                <p class="mt-5 text-heritage-brown/70 leading-8 max-w-2xl">
+                  Our collections celebrate culture without compromising
+                  functionality. Every piece is created to feel refined,
+                  wearable and memorable.
+                </p>
+              </div>
+              <div
+                class="bg-white/70 rounded-[2rem] p-6 border border-heritage-gold/25"
+              >
+                <h3 class="font-display text-2xl text-heritage-brown">
+                  Need styling support?
+                </h3>
+                <p class="mt-2 text-heritage-brown/65 leading-7">
+                  Add your favourite pieces to cart and our team can advise on
+                  sizing, styling and event-ready combinations.
+                </p>
+                <button
+                  id="atelierCartBtn"
+                  class="btn-primary rounded-full px-7 py-4 font-bold mt-6 w-full sm:w-auto"
+                >
+                  Start Shopping
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-heritage-brown text-heritage-cream pt-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div class="grid md:grid-cols-4 gap-10">
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-3">
+              <span
+                class="h-12 w-12 rounded-full bg-heritage-gold text-heritage-brown grid place-items-center font-display text-xl"
+                >HA</span
+              >
+              <div>
+                <p class="font-display text-2xl leading-none">
+                  HERITAGE APPAREL
+                </p>
+                <p
+                  class="text-xs tracking-[.34em] text-heritage-gold font-bold"
+                >
+                  WOMEN’S FASHION
+                </p>
+              </div>
+            </div>
+            <p class="mt-5 text-heritage-cream/65 leading-7 max-w-lg">
+              A Nigerian fashion designing company creating elegant women’s
+              clothes inspired by culture, craft and modern living.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold text-heritage-gold mb-4">Shop</h4>
+            <ul class="space-y-3 text-heritage-cream/70">
+              <li>
+                <a href="#collections" class="hover:text-heritage-gold"
+                  >Collections</a
+                >
+              </li>
+              <li>
+                <a href="#new-arrivals" class="hover:text-heritage-gold"
+                  >New Arrivals</a
+                >
+              </li>
+              <li>
+                <a href="#size-guide" class="hover:text-heritage-gold"
+                  >Size Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-heritage-gold mb-4">Contact</h4>
+            <ul class="space-y-3 text-heritage-cream/70">
+              <li>Lagos, Nigeria</li>
+              <li>hello@heritageapparel.ng</li>
+              <li>+234 800 000 0000</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="african-border"></div>
+      <div class="py-5 text-center text-sm text-heritage-cream/55">
+        © 2026 HERITAGE APPAREL. All rights reserved.
+      </div>
+    </footer>
+    <!-- Cart Sidebar -->
+    <div
+      id="cart-overlay"
+      class="cart-overlay fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none"
+      onclick="toggleCart()"
+    ></div>
+    <div
+      id="cart-sidebar"
+      class="cart-sidebar fixed top-0 right-0 h-full w-full sm:w-[440px] bg-white z-50 transform translate-x-full shadow-2xl flex flex-col"
+    >
+      <!-- Cart Header -->
+      <div
+        class="flex items-center justify-between p-6 border-b border-heritage-sand"
+      >
+        <div class="flex items-center gap-3">
+          <svg
+            class="w-6 h-6 text-heritage-gold"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+            />
+          </svg>
+          <h3 class="font-display text-xl font-bold">Shopping Bag</h3>
+          <span
+            id="cart-header-count"
+            class="bg-heritage-gold text-white text-xs px-2 py-0.5 rounded-full font-body"
+            >0</span
+          >
+        </div>
+        <button
+          id="closeCartBtn"
+          onclick="toggleCart()"
+          class="p-2 hover:bg-heritage-sand rounded-full transition-colors"
+          aria-label="Close cart"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Cart Items -->
+      <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-6">
+        <!-- Empty cart state -->
+        <div
+          id="empty-cart"
+          class="flex flex-col items-center justify-center h-full text-center"
+        >
+          <div
+            class="w-24 h-24 bg-heritage-sand rounded-full flex items-center justify-center mb-6"
+          >
+            <svg
+              class="w-12 h-12 text-heritage-brown/30"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              />
+            </svg>
+          </div>
+          <h4 class="font-display text-xl font-bold mb-2">Your bag is empty</h4>
+          <p class="font-body text-sm text-heritage-brown/60 mb-6">
+            Looks like you haven't added anything yet.
+          </p>
+          <button
+            onclick="toggleCart()"
+            class="btn-primary px-6 py-3 text-white font-body text-sm tracking-wider rounded-full"
+          >
+            CONTINUE SHOPPING
+          </button>
+        </div>
+      </div>
+
+      <!-- Cart Footer -->
+      <div id="cart-footer" class="border-t border-heritage-sand p-6 hidden">
+        <div class="space-y-3 mb-6">
+          <div class="flex justify-between font-body text-sm">
+            <span class="text-heritage-brown/60">Subtotal</span>
+            <span id="cart-subtotal" class="font-semibold">₦0</span>
+          </div>
+          <div class="flex justify-between font-body text-sm">
+            <span class="text-heritage-brown/60">Shipping</span>
+            <span class="font-semibold text-heritage-green">FREE</span>
+          </div>
+          <div class="h-px bg-heritage-sand"></div>
+          <div class="flex justify-between">
+            <span class="font-display font-bold text-lg">Total</span>
+            <span
+              id="cart-total"
+              class="font-display font-bold text-lg text-heritage-gold"
+              >₦0</span
+            >
+          </div>
+        </div>
+        <button
+          id="checkout-btn"
+          onclick="checkout()"
+          class="w-full btn-primary py-4 text-white font-body text-sm tracking-wider rounded-full flex items-center justify-center gap-2"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+            />
+          </svg>
+          PROCEED TO CHECKOUT
+        </button>
+        <button
+          onclick="toggleCart()"
+          class="w-full mt-3 py-3 font-body text-sm tracking-wider text-heritage-brown/60 hover:text-heritage-gold transition-colors text-center"
+        >
+          CONTINUE SHOPPING
+        </button>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast-container" class="fixed top-24 right-4 z-50 space-y-2"></div>
+
+    <script>
+      const products = [
+        {
+          id: "ankara-wrap-dress",
+          name: "Golden Ankara Wrap Dress",
+          category: "Dresses",
+          price: 68500,
+          oldPrice: 82000,
+          sizes: ["S", "M", "L", "XL"],
+          fabric: "fabric-4",
+          tag: "Bestseller",
+          rating: 4.9,
+          newest: 11,
+          description:
+            "A flattering wrap silhouette with vibrant Ankara print.",
+        },
+        {
+          id: "adire-midi-dress",
+          name: "Indigo Adire Midi Dress",
+          category: "Dresses",
+          price: 74500,
+          oldPrice: null,
+          sizes: ["XS", "S", "M", "L"],
+          fabric: "fabric-7",
+          tag: "New",
+          rating: 4.8,
+          newest: 12,
+          description:
+            "Hand-inspired Adire pattern made for effortless elegance.",
+        },
+        {
+          id: "emerald-kaftan",
+          name: "Emerald Embroidered Kaftan",
+          category: "Kaftans",
+          price: 89500,
+          oldPrice: 99000,
+          sizes: ["M", "L", "XL", "XXL"],
+          fabric: "fabric-2",
+          tag: "Limited",
+          rating: 4.9,
+          newest: 9,
+          description: "A luxurious kaftan with delicate neckline embroidery.",
+        },
+        {
+          id: "aso-oke-iro-buba",
+          name: "Aso-Oke Iro & Buba Set",
+          category: "Iro & Buba",
+          price: 128000,
+          oldPrice: null,
+          sizes: ["S", "M", "L", "XL", "XXL"],
+          fabric: "fabric-3",
+          tag: "Premium",
+          rating: 5.0,
+          newest: 8,
+          description:
+            "A refined two-piece set for special cultural occasions.",
+        },
+        {
+          id: "terracotta-bubu",
+          name: "Terracotta Silk Bubu",
+          category: "Kaftans",
+          price: 78500,
+          oldPrice: null,
+          sizes: ["S", "M", "L", "XL"],
+          fabric: "fabric-1",
+          tag: "Easy Fit",
+          rating: 4.7,
+          newest: 7,
+          description:
+            "Soft, flowy and sophisticated for day-to-night styling.",
+        },
+        {
+          id: "lace-asoebi-gown",
+          name: "Ruby Lace Aso-Ebi Gown",
+          category: "Aso-Ebi",
+          price: 155000,
+          oldPrice: 178000,
+          sizes: ["S", "M", "L", "XL"],
+          fabric: "fabric-6",
+          tag: "Occasion",
+          rating: 5.0,
+          newest: 10,
+          description:
+            "A show-stopping lace gown for weddings and celebrations.",
+        },
+        {
+          id: "ankara-peplum-top",
+          name: "Ankara Peplum Blouse",
+          category: "Workwear",
+          price: 42500,
+          oldPrice: null,
+          sizes: ["XS", "S", "M", "L", "XL"],
+          fabric: "fabric-5",
+          tag: "Work Chic",
+          rating: 4.6,
+          newest: 5,
+          description:
+            "Pair with skirts or trousers for a polished office look.",
+        },
+        {
+          id: "royal-adire-set",
+          name: "Royal Adire Trouser Set",
+          category: "Workwear",
+          price: 98000,
+          oldPrice: null,
+          sizes: ["S", "M", "L", "XL"],
+          fabric: "fabric-11",
+          tag: "New",
+          rating: 4.8,
+          newest: 13,
+          description: "A modern two-piece set with relaxed tailoring.",
+        },
+        {
+          id: "purple-asoebi-dress",
+          name: "Amethyst Aso-Ebi Dress",
+          category: "Aso-Ebi",
+          price: 142000,
+          oldPrice: null,
+          sizes: ["XS", "S", "M", "L"],
+          fabric: "fabric-8",
+          tag: "Event Ready",
+          rating: 4.9,
+          newest: 6,
+          description: "An elegant fitted piece with statement feminine lines.",
+        },
+        {
+          id: "green-iro-buba",
+          name: "Olive Iro & Buba Classic",
+          category: "Iro & Buba",
+          price: 112500,
+          oldPrice: 126000,
+          sizes: ["M", "L", "XL", "XXL"],
+          fabric: "fabric-9",
+          tag: "Classic",
+          rating: 4.7,
+          newest: 4,
+          description:
+            "A timeless traditional set with fresh contemporary finishing.",
+        },
+        {
+          id: "brown-office-dress",
+          name: "Cocoa Ankara Office Dress",
+          category: "Workwear",
+          price: 63500,
+          oldPrice: null,
+          sizes: ["XS", "S", "M", "L", "XL"],
+          fabric: "fabric-10",
+          tag: "Everyday",
+          rating: 4.5,
+          newest: 3,
+          description:
+            "Structured, comfortable and confident for the work week.",
+        },
+        {
+          id: "heritage-maxi-dress",
+          name: "Heritage Print Maxi Dress",
+          category: "Dresses",
+          price: 86500,
+          oldPrice: 94000,
+          sizes: ["S", "M", "L", "XL", "XXL"],
+          fabric: "fabric-12",
+          tag: "Trending",
+          rating: 4.9,
+          newest: 2,
+          description:
+            "A graceful maxi dress with bold Nigerian-inspired prints.",
+        },
+      ];
+
+      // ---- CART STATE (now matches script #2: simple in-memory array, no persistence) ----
+      let cart = [];
+
+      const state = {
+        category: "all",
+        query: "",
+        sort: "featured",
+        size: "all",
+      };
+
+      const productGrid = document.getElementById("productGrid");
+      const resultCount = document.getElementById("resultCount");
+      const emptyState = document.getElementById("emptyState");
+      const cartCount = document.getElementById("cartCount");
+      const cartOverlay = document.getElementById("cartOverlay");
+      const cartSidebar = document.getElementById("cartSidebar");
+      const cartItems = document.getElementById("cartItems");
+      const cartSummary = document.getElementById("cartSummary");
+      const subtotalEl = document.getElementById("subtotal");
+      const deliveryEl = document.getElementById("delivery");
+      const cartTotalEl = document.getElementById("cartTotal");
+      const checkoutBtn = document.getElementById("checkoutBtn");
+      const toastContainer = document.getElementById("toastContainer");
+
+      const money = (amount) =>
+        new Intl.NumberFormat("en-NG", {
+          style: "currency",
+          currency: "NGN",
+          maximumFractionDigits: 0,
+        }).format(amount);
+
+      function dressSVG() {
+        return `
+        <svg class="dress-icon w-[76%] max-w-[215px] mx-auto" viewBox="0 0 220 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M75 18C90 32 130 32 145 18L164 54L143 70L180 271C145 289 75 289 40 271L77 70L56 54L75 18Z" fill="rgba(255,248,231,.88)"/>
+          <path d="M83 32C98 42 123 42 137 32L129 68H92L83 32Z" fill="rgba(62,39,35,.86)"/>
+          <path d="M79 84H143L165 257C132 269 88 269 55 257L79 84Z" fill="rgba(255,255,255,.18)"/>
+          <path d="M65 124C92 104 127 104 155 124" stroke="rgba(62,39,35,.48)" stroke-width="7" stroke-linecap="round"/>
+          <path d="M61 168C92 148 129 148 160 168" stroke="rgba(200,162,60,.72)" stroke-width="7" stroke-linecap="round"/>
+          <path d="M57 213C91 194 130 194 164 213" stroke="rgba(27,94,32,.50)" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+      `;
+      }
+
+      function renderProducts() {
+        let filtered = products.filter((product) => {
+          const matchesCategory =
+            state.category === "all" || product.category === state.category;
+          const q = state.query.trim().toLowerCase();
+          const matchesQuery =
+            !q ||
+            product.name.toLowerCase().includes(q) ||
+            product.category.toLowerCase().includes(q) ||
+            product.description.toLowerCase().includes(q);
+          const matchesSize =
+            state.size === "all" || product.sizes.includes(state.size);
+          return matchesCategory && matchesQuery && matchesSize;
+        });
+
+        filtered.sort((a, b) => {
+          if (state.sort === "low") return a.price - b.price;
+          if (state.sort === "high") return b.price - a.price;
+          if (state.sort === "rating") return b.rating - a.rating;
+          if (state.sort === "newest") return b.newest - a.newest;
+          return b.rating + b.newest / 10 - (a.rating + a.newest / 10);
+        });
+
+        productGrid.innerHTML = filtered
+          .map(
+            (product, index) => `
+        <article class="product-card bg-white/82 rounded-[2rem] overflow-hidden border border-heritage-gold/18 shadow-sm reveal" style="animation-delay:${Math.min(index * 0.04, 0.28)}s" data-id="${product.id}">
+          <div class="relative overflow-hidden">
+            <div class="product-visual ${product.fabric} h-72 flex items-center justify-center">
+              ${dressSVG()}
+            </div>
+            <div class="absolute top-4 left-4 z-10 badge rounded-full px-3 py-1.5 text-xs font-extrabold text-heritage-brown">${product.tag}</div>
+            <div class="absolute top-4 right-4 z-10 badge rounded-full px-3 py-1.5 text-xs font-extrabold text-heritage-brown flex items-center gap-1">
+              <span class="text-heritage-gold">★</span>${product.rating}
+            </div>
+            <div class="quick-panel absolute left-4 right-4 bottom-4 z-10">
+              <button class="quick-add btn-primary w-full rounded-full py-3 font-bold" data-id="${product.id}">Add to cart</button>
+            </div>
+          </div>
+          <div class="p-5">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-extrabold uppercase tracking-[.2em] text-heritage-darkgold">${product.category}</p>
+                <h3 class="font-display text-2xl text-heritage-brown mt-1 leading-tight">${product.name}</h3>
+              </div>
+            </div>
+            <p class="text-sm text-heritage-brown/58 mt-3 leading-6">${product.description}</p>
+            <div class="flex items-baseline gap-2 mt-4">
+              <span class="font-extrabold text-xl text-heritage-brown">${money(product.price)}</span>
+              ${product.oldPrice ? `<span class="text-sm line-through text-heritage-brown/35">${money(product.oldPrice)}</span>` : ""}
+            </div>
+            <div class="mt-5">
+              <p class="text-xs font-bold text-heritage-brown/55 uppercase tracking-wide mb-2">Choose size</p>
+              <div class="flex flex-wrap gap-2 size-group" data-id="${product.id}">
+                ${product.sizes
+                  .map(
+                    (size, sizeIndex) => `
+                  <button class="size-btn ${sizeIndex === 0 ? "active" : ""} h-9 min-w-9 px-3 rounded-full border border-heritage-gold/30 bg-heritage-cream text-xs font-bold" data-size="${size}" type="button">${size}</button>
+                `,
+                  )
+                  .join("")}
+              </div>
+            </div>
+          </div>
+        </article>
+      `,
+          )
+          .join("");
+
+        resultCount.textContent = `Showing ${filtered.length} ${filtered.length === 1 ? "style" : "styles"}`;
+        emptyState.classList.toggle("hidden", filtered.length !== 0);
+      }
+
+      // ---- CART FUNCTIONS (rewritten to match script #2's behavior) ----
+
+      function getSelectedSize(productId) {
+        const group = document.querySelector(
+          `.size-group[data-id="${productId}"]`,
+        );
+        const active = group ? group.querySelector(".size-btn.active") : null;
+        return active ? active.dataset.size : "M";
+      }
+
+      // Add to Cart — no localStorage, cart lives only in memory for the session
+      function addToCart(productId, size) {
+        const product = products.find((p) => p.id === productId);
+        if (!product) return;
+
+        const selectedSize =
+          size || getSelectedSize(productId) || product.sizes[0];
+        const existingItem = cart.find(
+          (item) => item.id === productId && item.size === selectedSize,
+        );
+
+        if (existingItem) {
+          existingItem.quantity += 1;
+        } else {
+          cart.push({ ...product, size: selectedSize, quantity: 1 });
+        }
+
+        updateCartUI();
+        showToast(`${product.name} (${selectedSize}) added to bag!`);
+      }
+
+      // Quick Add (mirrors quickAdd in script #2)
+      function quickAdd(productId) {
+        addToCart(productId);
+      }
+
+      // Remove from Cart
+      function removeFromCart(productId, size) {
+        cart = cart.filter(
+          (item) => !(item.id === productId && item.size === size),
+        );
+        updateCartUI();
+      }
+
+      // Update Quantity
+      function updateQuantity(productId, size, change) {
+        const item = cart.find(
+          (item) => item.id === productId && item.size === size,
+        );
+        if (item) {
+          item.quantity += change;
+          if (item.quantity <= 0) {
+            removeFromCart(productId, size);
+            return;
+          }
+        }
+        updateCartUI();
+      }
+
+      // Update Cart UI — no delivery-fee line, subtotal === total, badge hides at 0
+      function updateCartUI() {
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        const subtotal = cart.reduce(
+          (sum, item) => sum + item.price * item.quantity,
+          0,
+        );
+
+        if (totalItems > 0) {
+          cartCount.textContent = totalItems;
+          cartCount.classList.remove("hidden");
+        } else {
+          cartCount.classList.add("hidden");
+        }
+
+        cartSummary.textContent = totalItems
+          ? `${totalItems} ${totalItems === 1 ? "item" : "items"} in your bag`
+          : "No items yet";
+        subtotalEl.textContent = money(subtotal);
+        if (deliveryEl) deliveryEl.textContent = money(0);
+        cartTotalEl.textContent = money(subtotal);
+        checkoutBtn.disabled = totalItems === 0;
+
+        if (!cart.length) {
+          cartItems.innerHTML = `
+          <div class="h-full min-h-[300px] flex flex-col items-center justify-center text-center">
+            <div class="h-20 w-20 rounded-full bg-heritage-sand grid place-items-center mb-5">
+              <svg class="w-9 h-9 text-heritage-brown/50" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L5.4 5M7 13l-2 7h14"/>
+              </svg>
+            </div>
+            <h3 class="font-display text-3xl text-heritage-brown">Your cart is empty</h3>
+            <p class="text-heritage-brown/60 mt-2 leading-6">Add beautiful HERITAGE APPAREL pieces from the women’s collection.</p>
+            <button class="btn-primary rounded-full px-7 py-3 font-bold mt-6 close-and-shop">Continue Shopping</button>
+          </div>
+        `;
+          return;
+        }
+
+        cartItems.innerHTML = cart
+          .map(
+            (item) => `
+        <div class="bg-white/82 rounded-[1.5rem] border border-heritage-gold/20 p-4 flex gap-4 cart-item">
+          <div class="${item.fabric} product-visual h-24 w-24 rounded-2xl shrink-0 grid place-items-center overflow-hidden">
+            <svg class="dress-icon w-16" viewBox="0 0 220 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M75 18C90 32 130 32 145 18L164 54L143 70L180 271C145 289 75 289 40 271L77 70L56 54L75 18Z" fill="rgba(255,248,231,.88)"/>
+              <path d="M83 32C98 42 123 42 137 32L129 68H92L83 32Z" fill="rgba(62,39,35,.86)"/>
+            </svg>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h4 class="font-bold text-heritage-brown leading-tight">${item.name}</h4>
+                <p class="text-xs text-heritage-brown/55 mt-1">${item.category} • Size ${item.size}</p>
+              </div>
+              <button onclick="removeFromCart('${item.id}', '${item.size}')" class="text-heritage-brown/45 hover:text-heritage-terracotta transition" aria-label="Remove ${item.name}">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+              </button>
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <div class="flex items-center rounded-full border border-heritage-gold/25 overflow-hidden bg-heritage-cream">
+                <button onclick="updateQuantity('${item.id}', '${item.size}', -1)" class="qty-btn h-9 w-9 grid place-items-center font-bold hover:bg-heritage-gold hover:text-white transition">−</button>
+                <span class="h-9 min-w-9 grid place-items-center font-bold text-sm">${item.quantity}</span>
+                <button onclick="updateQuantity('${item.id}', '${item.size}', 1)" class="qty-btn h-9 w-9 grid place-items-center font-bold hover:bg-heritage-gold hover:text-white transition">+</button>
+              </div>
+              <span class="font-extrabold text-heritage-brown">${money(item.price * item.quantity)}</span>
+            </div>
+          </div>
+        </div>
+      `,
+          )
+          .join("");
+      }
+
+      function openCart() {
+        cartOverlay.classList.add("open");
+        cartSidebar.classList.add("open");
+        document.body.classList.add("no-scroll");
+      }
+
+      function closeCart() {
+        cartOverlay.classList.remove("open");
+        cartSidebar.classList.remove("open");
+        document.body.classList.remove("no-scroll");
+      }
+
+      // Checkout — now actually clears the cart and closes the sidebar, like script #2
+      function checkout() {
+        if (!cart.length) return;
+        const total = cart.reduce(
+          (sum, item) => sum + item.price * item.quantity,
+          0,
+        );
+        showToast(`Order placed! Total: ${money(total)} 🎉`);
+        cart = [];
+        updateCartUI();
+        setTimeout(() => closeCart(), 1000);
+      }
+
+      function showToast(message) {
+        const toast = document.createElement("div");
+        toast.className =
+          "toast bg-heritage-brown text-heritage-cream rounded-2xl shadow-2xl px-5 py-4 flex items-center gap-3 max-w-[340px]";
+        toast.innerHTML = `
+        <span class="h-9 w-9 rounded-full bg-heritage-gold text-heritage-brown grid place-items-center shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+        </span>
+        <span class="text-sm font-semibold leading-5">${message}</span>
+      `;
+        toastContainer.appendChild(toast);
+        setTimeout(() => toast.remove(), 3100);
+      }
+
+      document.addEventListener("click", (event) => {
+        const sizeBtn = event.target.closest(".size-btn");
+        if (sizeBtn) {
+          const group = sizeBtn.closest(".size-group");
+          group
+            .querySelectorAll(".size-btn")
+            .forEach((btn) => btn.classList.remove("active"));
+          sizeBtn.classList.add("active");
+        }
+
+        const quickAddBtn = event.target.closest(".quick-add");
+        if (quickAddBtn) {
+          quickAdd(quickAddBtn.dataset.id);
+        }
+
+        const featured = event.target.closest(".add-featured");
+        if (featured) {
+          addToCart(featured.dataset.id, "M");
+          openCart();
+        }
+
+        const categoryBtn = event.target.closest(".filter-chip");
+        if (categoryBtn) {
+          document
+            .querySelectorAll(".filter-chip")
+            .forEach((btn) => btn.classList.remove("active"));
+          categoryBtn.classList.add("active");
+          state.category = categoryBtn.dataset.category;
+          renderProducts();
+        }
+
+        if (event.target.closest(".close-and-shop")) {
+          closeCart();
+          document
+            .getElementById("collections")
+            .scrollIntoView({ behavior: "smooth" });
+        }
+      });
+
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", (event) => {
+          state.query = event.target.value;
+          renderProducts();
+        });
+
+      document
+        .getElementById("sortSelect")
+        .addEventListener("change", (event) => {
+          state.sort = event.target.value;
+          renderProducts();
+        });
+
+      document
+        .getElementById("sizeFilter")
+        .addEventListener("change", (event) => {
+          state.size = event.target.value;
+          renderProducts();
+        });
+
+      document.getElementById("clearFilters").addEventListener("click", () => {
+        state.category = "all";
+        state.query = "";
+        state.sort = "featured";
+        state.size = "all";
+        document.getElementById("searchInput").value = "";
+        document.getElementById("sortSelect").value = "featured";
+        document.getElementById("sizeFilter").value = "all";
+        document
+          .querySelectorAll(".filter-chip")
+          .forEach((btn) =>
+            btn.classList.toggle("active", btn.dataset.category === "all"),
+          );
+        renderProducts();
+      });
+
+      document
+        .getElementById("openCartBtn")
+        .addEventListener("click", openCart);
+      document
+        .getElementById("openCartBtn2")
+        .addEventListener("click", openCart);
+      document
+        .getElementById("closeCartBtn")
+        .addEventListener("click", closeCart);
+      document
+        .getElementById("cartOverlay")
+        .addEventListener("click", closeCart);
+
+      document
+        .getElementById("atelierCartBtn")
+        .addEventListener("click", () => {
+          document
+            .getElementById("collections")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+
+      document
+        .getElementById("checkoutBtn")
+        .addEventListener("click", checkout);
+
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+      });
+
+      document.querySelectorAll(".mobile-link").forEach((link) => {
+        link.addEventListener("click", () =>
+          mobileMenu.classList.remove("open"),
+        );
+      });
+
+      window.addEventListener("scroll", () => {
+        document
+          .getElementById("navbar")
+          .classList.toggle("nav-scrolled", window.scrollY > 18);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeCart();
+      });
+
+      renderProducts();
+      updateCartUI();
+    </script>
+  </body>
+</html>
