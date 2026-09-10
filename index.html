@@ -3,40 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div>
-   <!-- <nav class="navbar">
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Our Story</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-
-  <div class="nav-action">
-    <a href="#" class="btn">Book a Consultation</a>
-  </div> 
-</nav> -->
-
-  <div class="logo"><html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HERITAGE APPAREL | Nigerian Women's Fashion</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -75,10 +46,21 @@
 
         /* Hero Pattern */
         .hero-pattern {
-            background-image: 
+            background-image:
                 radial-gradient(circle at 20% 50%, rgba(200, 162, 60, 0.15) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(199, 91, 57, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 50% 80%, rgba(27, 94, 32, 0.08) 0%, transparent 50%);
+        }
+
+        /* Checkerboard texture used behind dark editorial sections */
+        .pattern-mask {
+            background-image:
+                linear-gradient(45deg, rgba(255, 248, 231, 0.06) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(255, 248, 231, 0.06) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, rgba(255, 248, 231, 0.06) 75%),
+                linear-gradient(-45deg, transparent 75%, rgba(255, 248, 231, 0.06) 75%);
+            background-size: 24px 24px;
+            background-position: 0 0, 0 12px, 12px -12px, -12px 0;
         }
 
         /* African Pattern Border */
@@ -115,6 +97,36 @@
             opacity: 0;
             transform: translateY(20px);
             transition: all 0.3s ease;
+        }
+
+        /* Glass filter bar */
+        .glass {
+            background: rgba(255, 248, 231, 0.85);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(200, 162, 60, 0.22);
+        }
+
+        /* Clean select arrow */
+        .select-clean {
+            appearance: none;
+            background-image:
+                linear-gradient(45deg, transparent 50%, #3E2723 50%),
+                linear-gradient(135deg, #3E2723 50%, transparent 50%);
+            background-position: calc(100% - 18px) calc(50% - 3px), calc(100% - 13px) calc(50% - 3px);
+            background-size: 5px 5px, 5px 5px;
+            background-repeat: no-repeat;
+        }
+
+        /* Category filter chips */
+        .filter-chip {
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        .filter-chip.active {
+            background: #C8A23C;
+            color: white;
+            border-color: #C8A23C;
         }
 
         /* Cart Sidebar */
@@ -226,7 +238,6 @@
             border-color: #C8A23C;
         }
 
-
         /* Navbar scroll */
         .navbar-scrolled {
             background: rgba(255, 248, 231, 0.95) !important;
@@ -234,35 +245,19 @@
             box-shadow: 0 4px 30px rgba(62, 39, 35, 0.1);
         }
 
-        /* Product image placeholders with patterns */
-        .pattern-1 {
-            background: linear-gradient(135deg, #C75B39 0%, #E8845C 50%, #C8A23C 100%);
-        }
-        .pattern-2 {
-            background: linear-gradient(135deg, #1B5E20 0%, #4CAF50 50%, #C8A23C 100%);
-        }
-        .pattern-3 {
-            background: linear-gradient(135deg, #3E2723 0%, #795548 50%, #C8A23C 100%);
-        }
-        .pattern-4 {
-            background: linear-gradient(135deg, #C8A23C 0%, #FFD54F 50%, #C75B39 100%);
-        }
-        .pattern-5 {
-            background: linear-gradient(135deg, #1B5E20 0%, #C8A23C 50%, #3E2723 100%);
-        }
-        .pattern-6 {
-            background: linear-gradient(135deg, #C75B39 0%, #3E2723 50%, #1B5E20 100%);
-        }
-        .pattern-7 {
-            background: linear-gradient(135deg, #4A148C 0%, #7B1FA2 50%, #C8A23C 100%);
-        }
-        .pattern-8 {
-            background: linear-gradient(135deg, #B71C1C 0%, #E53935 50%, #C8A23C 100%);
-        }
+        /* Product image placeholder gradients (sit behind photos, show while images load) */
+        .pattern-1 { background: linear-gradient(135deg, #C75B39 0%, #E8845C 50%, #C8A23C 100%); }
+        .pattern-2 { background: linear-gradient(135deg, #1B5E20 0%, #4CAF50 50%, #C8A23C 100%); }
+        .pattern-3 { background: linear-gradient(135deg, #3E2723 0%, #795548 50%, #C8A23C 100%); }
+        .pattern-4 { background: linear-gradient(135deg, #C8A23C 0%, #FFD54F 50%, #C75B39 100%); }
+        .pattern-5 { background: linear-gradient(135deg, #1B5E20 0%, #C8A23C 50%, #3E2723 100%); }
+        .pattern-6 { background: linear-gradient(135deg, #C75B39 0%, #3E2723 50%, #1B5E20 100%); }
+        .pattern-7 { background: linear-gradient(135deg, #4A148C 0%, #7B1FA2 50%, #C8A23C 100%); }
+        .pattern-8 { background: linear-gradient(135deg, #B71C1C 0%, #E53935 50%, #C8A23C 100%); }
 
         /* Adire pattern overlay */
         .adire-overlay {
-            background-image: 
+            background-image:
                 radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 2px),
                 radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
             background-size: 20px 20px, 10px 10px;
@@ -338,12 +333,9 @@
             100% { transform: translateX(-50%); }
         }
 
-        /* Product detail modal */
-        .modal-overlay {
-            transition: opacity 0.3s ease;
-        }
-        .modal-content {
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        @media (max-width: 768px) {
+            .quick-add { opacity: 1; transform: none; }
+            .product-card:hover { transform: none; }
         }
     </style>
 </head>
@@ -369,9 +361,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
-                <a href="#" class="flex items-center gap-2">
+                <a href="#home" class="flex items-center gap-2">
                     <div class="w-11 h-10 bg-transparent rounded-full flex items-center justify-center">
-                        <img src="images/logo.png" alt="">
+                        <img src="images/logo.png" alt="Heritage Apparel logo">
                     </div>
                     <div>
                         <h1 class="font-display font-bold text-xl tracking-wide text-heritage-brown leading-tight">HERITAGE</h1>
@@ -385,11 +377,11 @@
                         HOME
                         <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-heritage-gold transition-all group-hover:w-full"></span>
                     </a>
-                    <a href="collection.html" class="font-body text-sm tracking-wider hover:text-heritage-gold transition-colors relative group">
+                    <a href="#collections" class="font-body text-sm tracking-wider hover:text-heritage-gold transition-colors relative group">
                         COLLECTIONS
                         <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-heritage-gold transition-all group-hover:w-full"></span>
                     </a>
-                    <a href="#shop" class="font-body text-sm tracking-wider hover:text-heritage-gold transition-colors relative group">
+                    <a href="#shop-grid" class="font-body text-sm tracking-wider hover:text-heritage-gold transition-colors relative group">
                         SHOP
                         <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-heritage-gold transition-all group-hover:w-full"></span>
                     </a>
@@ -442,7 +434,7 @@
             <div class="px-6 py-4 space-y-4">
                 <a href="#home" onclick="toggleMobileMenu()" class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold">HOME</a>
                 <a href="#collections" onclick="toggleMobileMenu()" class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold">COLLECTIONS</a>
-                <a href="#shop" onclick="toggleMobileMenu()" class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold">SHOP</a>
+                <a href="#shop-grid" onclick="toggleMobileMenu()" class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold">SHOP</a>
                 <a href="#about" onclick="toggleMobileMenu()" class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold">ABOUT</a>
                 <a href="#testimonials" onclick="toggleMobileMenu()" class="block font-body text-sm tracking-wider py-2 hover:text-heritage-gold">REVIEWS</a>
             </div>
@@ -451,7 +443,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative min-h-[90vh] flex items-center hero-pattern overflow-hidden">
-        <!-- Decorative elements -->
         <div class="absolute top-20 right-10 w-72 h-72 bg-heritage-gold/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-20 left-10 w-96 h-96 bg-heritage-terracotta/10 rounded-full blur-3xl"></div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-heritage-gold/10 rounded-full"></div>
@@ -473,7 +464,7 @@
                     Discover exquisite Nigerian fashion crafted for the modern woman. Each piece tells a story of culture, artistry, and timeless beauty.
                 </p>
                 <div class="flex flex-wrap gap-4 animate-fadeInUp opacity-0 stagger-4">
-                    <a href="#shop" class="btn-primary px-8 py-4 text-white font-body text-sm tracking-wider rounded-full inline-flex items-center gap-2">
+                    <a href="#shop-grid" class="btn-primary px-8 py-4 text-white font-body text-sm tracking-wider rounded-full inline-flex items-center gap-2">
                         SHOP NOW
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -504,7 +495,6 @@
             <!-- Hero Image Collage -->
             <div class="relative animate-fadeIn opacity-0 stagger-3 hidden lg:block">
                 <div class="relative w-full h-[600px]">
-                    <!-- Main image -->
                     <div class="absolute top-0 right-0 w-80 h-[450px] rounded-3xl overflow-hidden shadow-2xl pattern-1 adire-overlay">
                         <div class="bg-[url('images/Elegant%20Fashion%20Portrait.png')] bg-cover bg-center absolute inset-0 flex items-end p-6">
                             <div class="text-white">
@@ -513,7 +503,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Secondary image -->
                     <div class="absolute bottom-0 left-0 w-64 h-80 rounded-3xl overflow-hidden shadow-2xl pattern-2 adire-overlay animate-float">
                         <div class="bg-[url('images/Elegant%20Traditional%20Attire.png')] bg-cover bg-center absolute inset-0 flex items-end p-6">
                             <div class="text-white">
@@ -522,9 +511,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Accent element -->
                     <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-heritage-gold/20 rounded-full blur-xl"></div>
-                    <!-- Floating badge -->
                     <div class="absolute top-10 left-10 bg-white rounded-2xl p-4 shadow-lg animate-float" style="animation-delay: 1s;">
                         <div class="flex items-center gap-2">
                             <div class="w-8 h-8 bg-heritage-green rounded-full flex items-center justify-center">
@@ -543,7 +530,7 @@
         </div>
     </section>
 
-    <!-- Categories Section -->
+    <!-- Collections Section: category showcase + full searchable/filterable shop -->
     <section id="collections" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
@@ -552,11 +539,11 @@
                 <p class="font-body text-heritage-brown/60 max-w-2xl mx-auto">From traditional Ankara to contemporary fusion wear, find the perfect piece that celebrates your unique style.</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal mb-24">
                 <!-- Category 1 -->
-                <div class="category-card rounded-2xl h-80 relative group">
+                <div class="category-card rounded-2xl h-80 relative group" onclick="filterByCategory('ankara')">
                     <div class="category-img absolute inset-0 pattern-1 adire-overlay rounded-2xl"></div>
-                    <div class="bg-[url('images/Fashionable%20Attire%20Display.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 z-100">
+                    <div class="bg-[url('images/Fashionable%20Attire%20Display.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 rounded-2xl">
                         <h3 class="font-display text-2xl font-bold text-white mb-1">Ankara Dresses</h3>
                         <p class="text-white/70 text-sm font-body">24 Pieces</p>
                         <div class="mt-3 flex items-center gap-2 text-heritage-gold text-sm font-body opacity-0 group-hover:opacity-100 transition-opacity">
@@ -568,9 +555,9 @@
                     </div>
                 </div>
                 <!-- Category 2 -->
-                <div class="category-card rounded-2xl h-80 relative group">
+                <div class="category-card rounded-2xl h-80 relative group" onclick="filterByCategory('kaftan')">
                     <div class="category-img absolute inset-0 pattern-2 adire-overlay rounded-2xl"></div>
-                    <div class="bg-[url('images/Elegant%20Traditional%20Attire.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 z-100">
+                    <div class="bg-[url('images/Elegant%20Traditional%20Attire.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 rounded-2xl">
                         <h3 class="font-display text-2xl font-bold text-white mb-1">Kaftans & Boubous</h3>
                         <p class="text-white/70 text-sm font-body">18 Pieces</p>
                         <div class="mt-3 flex items-center gap-2 text-heritage-gold text-sm font-body opacity-0 group-hover:opacity-100 transition-opacity">
@@ -582,9 +569,9 @@
                     </div>
                 </div>
                 <!-- Category 3 -->
-                <div class="category-card rounded-2xl h-80 relative group">
+                <div class="category-card rounded-2xl h-80 relative group" onclick="filterByCategory('aso-oke')">
                     <div class="category-img absolute inset-0 pattern-5 adire-overlay rounded-2xl"></div>
-                    <div class="bg-[url('images/asooke.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 z-100">
+                    <div class="bg-[url('images/asooke.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 rounded-2xl">
                         <h3 class="font-display text-2xl font-bold text-white mb-1">Aso-Oke Sets</h3>
                         <p class="text-white/70 text-sm font-body">12 Pieces</p>
                         <div class="mt-3 flex items-center gap-2 text-heritage-gold text-sm font-body opacity-0 group-hover:opacity-100 transition-opacity">
@@ -596,9 +583,9 @@
                     </div>
                 </div>
                 <!-- Category 4 -->
-                <div class="category-card rounded-2xl h-80 relative group">
+                <div class="category-card rounded-2xl h-80 relative group" onclick="filterByCategory('fusion')">
                     <div class="category-img absolute inset-0 pattern-7 adire-overlay rounded-2xl"></div>
-                    <div class="bg-[url('images/Elegant%20Fusion%20Attire.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 z-10">
+                    <div class="bg-[url('images/Elegant%20Fusion%20Attire.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 rounded-2xl">
                         <h3 class="font-display text-2xl font-bold text-white mb-1">Contemporary Fusion</h3>
                         <p class="text-white/70 text-sm font-body">30 Pieces</p>
                         <div class="mt-3 flex items-center gap-2 text-heritage-gold text-sm font-body opacity-0 group-hover:opacity-100 transition-opacity">
@@ -610,30 +597,195 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Full shoppable, searchable grid -->
+            <div id="shop-grid" class="scroll-mt-24">
+                <div class="text-center mb-10 reveal">
+                    <span class="text-heritage-gold font-body text-sm tracking-[0.3em]">CURATED FOR YOU</span>
+                    <h2 class="font-display text-4xl sm:text-5xl font-bold mt-3 mb-4">Shop the Full Collection</h2>
+                    <p class="font-body text-heritage-brown/60 max-w-2xl mx-auto">Search, filter and sort to find the piece that's right for your occasion, and pick your size before adding it to your bag.</p>
+                </div>
+
+                <!-- Filter bar -->
+                <div class="glass rounded-[2rem] p-4 sm:p-5 mb-10 shadow-sm reveal">
+                    <div class="grid lg:grid-cols-[1.2fr_.55fr_.45fr] gap-4">
+                        <label class="relative block">
+                            <span class="sr-only">Search collection</span>
+                            <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-heritage-brown/45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 110-15 7.5 7.5 0 010 15z"/>
+                            </svg>
+                            <input id="searchInput" type="search" placeholder="Search dresses, kaftans, aso-oke..." class="w-full h-14 rounded-2xl bg-white/80 border border-heritage-gold/20 pl-12 pr-4 outline-none focus:border-heritage-gold focus:ring-4 focus:ring-heritage-gold/10 transition font-body text-heritage-brown placeholder:text-heritage-brown/40">
+                        </label>
+
+                        <select id="sortSelect" class="select-clean h-14 rounded-2xl bg-white/80 border border-heritage-gold/20 px-4 pr-10 outline-none focus:border-heritage-gold focus:ring-4 focus:ring-heritage-gold/10 transition font-body text-heritage-brown font-semibold">
+                            <option value="featured">Sort: Featured</option>
+                            <option value="newest">Newest Arrivals</option>
+                            <option value="low">Price: Low to High</option>
+                            <option value="high">Price: High to Low</option>
+                        </select>
+
+                        <select id="sizeFilter" class="select-clean h-14 rounded-2xl bg-white/80 border border-heritage-gold/20 px-4 pr-10 outline-none focus:border-heritage-gold focus:ring-4 focus:ring-heritage-gold/10 transition font-body text-heritage-brown font-semibold">
+                            <option value="all">All Sizes</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+
+                    <div class="mt-5 overflow-x-auto pb-1">
+                        <div id="categoryFilters" class="flex gap-3 min-w-max">
+                            <button class="filter-chip active rounded-full px-5 py-2.5 bg-white border border-heritage-gold/25 font-body font-semibold text-sm" data-category="all">All Styles</button>
+                            <button class="filter-chip rounded-full px-5 py-2.5 bg-white border border-heritage-gold/25 font-body font-semibold text-sm" data-category="ankara">Ankara</button>
+                            <button class="filter-chip rounded-full px-5 py-2.5 bg-white border border-heritage-gold/25 font-body font-semibold text-sm" data-category="kaftan">Kaftans</button>
+                            <button class="filter-chip rounded-full px-5 py-2.5 bg-white border border-heritage-gold/25 font-body font-semibold text-sm" data-category="aso-oke">Aso-Oke</button>
+                            <button class="filter-chip rounded-full px-5 py-2.5 bg-white border border-heritage-gold/25 font-body font-semibold text-sm" data-category="fusion">Fusion</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between mb-7 reveal">
+                    <p id="resultCount" class="font-body font-bold text-heritage-brown/70">Showing 12 styles</p>
+                    <button id="clearFilters" class="font-body text-sm font-bold text-heritage-gold hover:text-heritage-darkgold transition-colors">Clear filters</button>
+                </div>
+
+                <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+
+                <div id="emptyState" class="hidden text-center py-20">
+                    <div class="mx-auto h-20 w-20 rounded-full bg-heritage-sand grid place-items-center mb-5">
+                        <svg class="w-9 h-9 text-heritage-brown/60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 110-15 7.5 7.5 0 010 15z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-3xl text-heritage-brown">No styles found</h3>
+                    <p class="mt-2 font-body text-heritage-brown/60">Try another category, size, or search term.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="shop" class="py-20 bg-heritage-cream">
+    <!-- Lagos Muse Edit Section -->
+    <section id="new-arrivals" class="py-20 bg-heritage-brown text-heritage-cream overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10 pattern-mask"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <p class="text-sm font-extrabold uppercase tracking-[.28em] text-heritage-gold mb-3 font-body">Fresh from the atelier</p>
+                    <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl">The Lagos Muse Edit</h2>
+                    <p class="mt-5 text-heritage-cream/75 leading-8 max-w-xl font-body">New silhouettes made for weddings, brunches, workdays and celebrations. Each garment blends contemporary tailoring with West African textile storytelling.</p>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-4 reveal">
+                    <div class="rounded-[2rem] p-5 bg-white/10 border border-white/10">
+                        <div class="font-display text-5xl text-heritage-gold">01</div>
+                        <h3 class="font-body font-bold mt-4">Premium Fabrics</h3>
+                        <p class="text-sm text-heritage-cream/65 mt-2 leading-6 font-body">Ankara, Adire, lace, crepe and hand-selected trims.</p>
+                    </div>
+                    <div class="rounded-[2rem] p-5 bg-white/10 border border-white/10">
+                        <div class="font-display text-5xl text-heritage-gold">02</div>
+                        <h3 class="font-body font-bold mt-4">Women First</h3>
+                        <p class="text-sm text-heritage-cream/65 mt-2 leading-6 font-body">Cuts created for feminine comfort, confidence and movement.</p>
+                    </div>
+                    <div class="rounded-[2rem] p-5 bg-white/10 border border-white/10">
+                        <div class="font-display text-5xl text-heritage-gold">03</div>
+                        <h3 class="font-body font-bold mt-4">Made in Nigeria</h3>
+                        <p class="text-sm text-heritage-cream/65 mt-2 leading-6 font-body">Designed with pride by a Nigerian fashion studio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide Section -->
+    <section id="size-guide" class="py-20 bg-heritage-sand/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 reveal">
-                <span class="text-heritage-gold font-body text-sm tracking-[0.3em]">CURATED FOR YOU</span>
-                <h2 class="font-display text-4xl sm:text-5xl font-bold mt-3 mb-4">Shop Our Bestsellers</h2>
-                <p class="font-body text-heritage-brown/60 max-w-2xl mx-auto">Handpicked pieces that our customers love the most. Each garment is a masterpiece of Nigerian craftsmanship.</p>
-            </div>
+            <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-10 items-start">
+                <div class="reveal">
+                    <p class="text-sm font-extrabold uppercase tracking-[.28em] text-heritage-darkgold mb-3 font-body">Perfect Fit</p>
+                    <h2 class="font-display text-4xl sm:text-5xl text-heritage-brown">Women's Size Guide</h2>
+                    <p class="mt-4 text-heritage-brown/70 leading-7 font-body">Use our standard guide for ready-to-wear pieces. For bespoke fittings, contact the atelier after checkout.</p>
+                </div>
 
-            <!-- Filter Tabs -->
-            <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
-                <button onclick="filterProducts('all')" class="filter-btn active px-6 py-2 rounded-full font-body text-sm tracking-wider border-2 border-heritage-gold bg-heritage-gold text-white transition-all hover:bg-heritage-gold hover:text-white" data-filter="all">All</button>
-                <button onclick="filterProducts('ankara')" class="filter-btn px-6 py-2 rounded-full font-body text-sm tracking-wider border-2 border-heritage-brown/20 text-heritage-brown/60 transition-all hover:border-heritage-gold hover:text-heritage-gold" data-filter="ankara">Ankara</button>
-                <button onclick="filterProducts('kaftan')" class="filter-btn px-6 py-2 rounded-full font-body text-sm tracking-wider border-2 border-heritage-brown/20 text-heritage-brown/60 transition-all hover:border-heritage-gold hover:text-heritage-gold" data-filter="kaftan">Kaftans</button>
-                <button onclick="filterProducts('aso-oke')" class="filter-btn px-6 py-2 rounded-full font-body text-sm tracking-wider border-2 border-heritage-brown/20 text-heritage-brown/60 transition-all hover:border-heritage-gold hover:text-heritage-gold" data-filter="aso-oke">Aso-Oke</button>
-                <button onclick="filterProducts('fusion')" class="filter-btn px-6 py-2 rounded-full font-body text-sm tracking-wider border-2 border-heritage-brown/20 text-heritage-brown/60 transition-all hover:border-heritage-gold hover:text-heritage-gold" data-filter="fusion">Fusion</button>
+                <div class="bg-white/80 rounded-[2rem] border border-heritage-gold/20 overflow-hidden shadow-sm reveal">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left min-w-[620px] font-body">
+                            <thead class="bg-heritage-brown text-heritage-cream">
+                                <tr>
+                                    <th class="px-6 py-4 text-sm uppercase tracking-wide">Size</th>
+                                    <th class="px-6 py-4 text-sm uppercase tracking-wide">Bust</th>
+                                    <th class="px-6 py-4 text-sm uppercase tracking-wide">Waist</th>
+                                    <th class="px-6 py-4 text-sm uppercase tracking-wide">Hips</th>
+                                    <th class="px-6 py-4 text-sm uppercase tracking-wide">UK</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-heritage-gold/15 text-heritage-brown/75">
+                                <tr>
+                                    <td class="px-6 py-4 font-bold text-heritage-brown">XS</td>
+                                    <td class="px-6 py-4">32–33"</td>
+                                    <td class="px-6 py-4">24–25"</td>
+                                    <td class="px-6 py-4">34–35"</td>
+                                    <td class="px-6 py-4">6</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-bold text-heritage-brown">S</td>
+                                    <td class="px-6 py-4">34–35"</td>
+                                    <td class="px-6 py-4">26–27"</td>
+                                    <td class="px-6 py-4">36–37"</td>
+                                    <td class="px-6 py-4">8</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-bold text-heritage-brown">M</td>
+                                    <td class="px-6 py-4">36–37"</td>
+                                    <td class="px-6 py-4">28–29"</td>
+                                    <td class="px-6 py-4">38–40"</td>
+                                    <td class="px-6 py-4">10</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-bold text-heritage-brown">L</td>
+                                    <td class="px-6 py-4">38–40"</td>
+                                    <td class="px-6 py-4">30–32"</td>
+                                    <td class="px-6 py-4">41–43"</td>
+                                    <td class="px-6 py-4">12</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-bold text-heritage-brown">XL</td>
+                                    <td class="px-6 py-4">41–43"</td>
+                                    <td class="px-6 py-4">33–35"</td>
+                                    <td class="px-6 py-4">44–46"</td>
+                                    <td class="px-6 py-4">14</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 font-bold text-heritage-brown">XXL</td>
+                                    <td class="px-6 py-4">44–46"</td>
+                                    <td class="px-6 py-4">36–38"</td>
+                                    <td class="px-6 py-4">47–49"</td>
+                                    <td class="px-6 py-4">16</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Product Grid -->
-            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Products will be injected by JavaScript -->
+    <!-- Atelier CTA Section -->
+    <section id="atelier" class="py-20 bg-heritage-cream hero-pattern overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="rounded-[2.5rem] border border-heritage-gold/25 p-8 sm:p-12 lg:p-14 shadow-sm overflow-hidden relative reveal">
+                <div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-heritage-gold/20 blur-3xl"></div>
+                <div class="relative z-10 grid lg:grid-cols-[1.1fr_.9fr] gap-10 items-center">
+                    <div>
+                        <p class="text-sm font-extrabold uppercase tracking-[.28em] text-heritage-darkgold mb-3 font-body">HERITAGE APPAREL Atelier</p>
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl text-heritage-brown">Designed for the modern Nigerian woman.</h2>
+                        <p class="mt-5 text-heritage-brown/70 leading-8 max-w-2xl font-body">Our collections celebrate culture without compromising functionality. Every piece is created to feel refined, wearable and memorable.</p>
+                    </div>
+                    <div class="bg-white/70 rounded-[2rem] p-6 border border-heritage-gold/25">
+                        <h3 class="font-display text-2xl text-heritage-brown">Need styling support?</h3>
+                        <p class="mt-2 text-heritage-brown/65 leading-7 font-body">Add your favourite pieces to cart and our team can advise on sizing, styling and event-ready combinations.</p>
+                        <button onclick="document.getElementById('shop-grid').scrollIntoView({behavior:'smooth'})" class="btn-primary rounded-full px-7 py-4 font-body font-bold mt-6 w-full sm:w-auto text-white">Start Shopping</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -805,7 +957,6 @@
     <footer class="bg-heritage-brown text-heritage-cream pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <!-- Brand -->
                 <div class="space-y-4">
                     <div class="flex items-center gap-2">
                         <div class="w-10 h-10 bg-transparent rounded-full flex items-center justify-center">
@@ -833,19 +984,17 @@
                     </div>
                 </div>
 
-                <!-- Quick Links -->
                 <div>
                     <h4 class="font-display font-bold text-lg mb-4">Quick Links</h4>
                     <ul class="space-y-3">
-                        <li><a href="#" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">New Arrivals</a></li>
-                        <li><a href="#" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">Bestsellers</a></li>
-                        <li><a href="#" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">Sale</a></li>
-                        <li><a href="#" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">Custom Orders</a></li>
-                        <li><a href="#" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">Size Guide</a></li>
+                        <li><a href="#new-arrivals" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">New Arrivals</a></li>
+                        <li><a href="#shop-grid" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">Bestsellers</a></li>
+                        <li><a href="#shop-grid" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">Sale</a></li>
+                        <li><a href="#atelier" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">Custom Orders</a></li>
+                        <li><a href="#size-guide" class="font-body text-sm text-heritage-cream/60 hover:text-heritage-gold transition-colors">Size Guide</a></li>
                     </ul>
                 </div>
 
-                <!-- Customer Service -->
                 <div>
                     <h4 class="font-display font-bold text-lg mb-4">Customer Service</h4>
                     <ul class="space-y-3">
@@ -857,7 +1006,6 @@
                     </ul>
                 </div>
 
-                <!-- Contact -->
                 <div>
                     <h4 class="font-display font-bold text-lg mb-4">Visit Us</h4>
                     <div class="space-y-3">
@@ -904,10 +1052,8 @@
     </footer>
 
     <!-- Cart Sidebar -->
-    <div id="cart-overlay" class="cart-overlay fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none" onclick="toggleCart()">
-    </div>
+    <div id="cart-overlay" class="cart-overlay fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none" onclick="toggleCart()"></div>
     <div id="cart-sidebar" class="cart-sidebar fixed top-0 right-0 h-full w-full sm:w-[440px] bg-white z-50 transform translate-x-full shadow-2xl flex flex-col">
-        <!-- Cart Header -->
         <div class="flex items-center justify-between p-6 border-b border-heritage-sand">
             <div class="flex items-center gap-3">
                 <svg class="w-6 h-6 text-heritage-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -923,9 +1069,7 @@
             </button>
         </div>
 
-        <!-- Cart Items -->
         <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-6">
-            <!-- Empty cart state -->
             <div id="empty-cart" class="flex flex-col items-center justify-center h-full text-center">
                 <div class="w-24 h-24 bg-heritage-sand rounded-full flex items-center justify-center mb-6">
                     <svg class="w-12 h-12 text-heritage-brown/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -940,7 +1084,6 @@
             </div>
         </div>
 
-        <!-- Cart Footer -->
         <div id="cart-footer" class="border-t border-heritage-sand p-6 hidden">
             <div class="space-y-3 mb-6">
                 <div class="flex justify-between font-body text-sm">
@@ -973,8 +1116,11 @@
     <div id="toast-container" class="fixed top-24 right-4 z-50 space-y-2"></div>
 
     <script>
-        // Product Data
-        const products = [
+        // ---- PRODUCT DATA ----
+        // The 4 real pieces from the homepage, each with its own photo and details.
+        // Repeated 3x each (ids 11-13, 21-23, 31-33, 41-43) to fill the grid out to
+        // 12 cards, exactly as requested — same images, same details, just more of them.
+        const baseProducts = [
             {
                 id: 1,
                 name: "Royal Ankara Midi Dress",
@@ -985,7 +1131,8 @@
                 pattern: "pattern-1",
                 tag: "Bestseller",
                 sizes: ["XS", "S", "M", "L", "XL"],
-                description: "A stunning midi dress featuring vibrant Ankara print with a modern silhouette."
+                description: "A stunning midi dress featuring vibrant Ankara print with a modern silhouette.",
+                newest: 2
             },
             {
                 id: 2,
@@ -997,19 +1144,21 @@
                 pattern: "pattern-2",
                 tag: "New",
                 sizes: ["S", "M", "L", "XL"],
-                description: "Luxurious kaftan in rich emerald green with gold embroidery details."
+                description: "Luxurious kaftan in rich emerald green with gold embroidery details.",
+                newest: 4
             },
             {
                 id: 3,
-                image: "images/asooke.png",
                 name: "Aso-Oke Wedding Gown",
+                image: "images/asooke.png",
                 price: 85000,
                 originalPrice: 95000,
                 category: "aso-oke",
                 pattern: "pattern-3",
                 tag: "Limited",
                 sizes: ["XS", "S", "M", "L"],
-                description: "Exquisite hand-woven Aso-Oke gown perfect for traditional weddings."
+                description: "Exquisite hand-woven Aso-Oke gown perfect for traditional weddings.",
+                newest: 1
             },
             {
                 id: 4,
@@ -1021,182 +1170,202 @@
                 pattern: "pattern-4",
                 tag: "Trending",
                 sizes: ["XS", "S", "M", "L", "XL"],
-                description: "Contemporary blazer dress with African print accents for the modern woman."
+                description: "Contemporary blazer dress with African print accents for the modern woman.",
+                newest: 3
             }
         ];
 
-        // Cart State
-        let cart = [];
+        const products = baseProducts.flatMap((base) =>
+            [1, 2, 3].map((n) => ({ ...base, id: base.id * 10 + n }))
+        );
 
-        // Format price in Naira
+        // ---- STATE ----
+        let cart = [];
+        const state = { category: "all", query: "", sort: "featured", size: "all" };
+
+        const productGrid = document.getElementById("product-grid");
+        const resultCount = document.getElementById("resultCount");
+        const emptyState = document.getElementById("emptyState");
+
         function formatPrice(price) {
-            return '₦' + price.toLocaleString();
+            return "₦" + price.toLocaleString();
         }
 
-        // Render Products
-        function renderProducts(filter = 'all') {
-            const grid = document.getElementById('product-grid');
-            const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
-            
-            grid.innerHTML = filtered.map((product, index) => `
-                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm" data-category="${product.category}" style="animation: fadeInUp 0.6s ease forwards; animation-delay: ${index * 0.1}s; opacity: 0;">
+        // ---- RENDER PRODUCTS (search + filter + sort) ----
+        function renderProducts() {
+            const q = state.query.trim().toLowerCase();
+
+            let filtered = products.filter((p) => {
+                const matchesCategory = state.category === "all" || p.category === state.category;
+                const matchesQuery =
+                    !q ||
+                    p.name.toLowerCase().includes(q) ||
+                    p.category.toLowerCase().includes(q) ||
+                    p.description.toLowerCase().includes(q);
+                const matchesSize = state.size === "all" || p.sizes.includes(state.size);
+                return matchesCategory && matchesQuery && matchesSize;
+            });
+
+            filtered.sort((a, b) => {
+                if (state.sort === "low") return a.price - b.price;
+                if (state.sort === "high") return b.price - a.price;
+                if (state.sort === "newest") return b.newest - a.newest;
+                return 0; // featured = original order
+            });
+
+            productGrid.innerHTML = filtered
+                .map(
+                    (product, index) => `
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm" data-category="${product.category}" style="animation: fadeInUp 0.6s ease forwards; animation-delay: ${Math.min(index * 0.06, 0.4)}s; opacity: 0;">
                     <div class="relative h-72 ${product.pattern} adire-overlay overflow-hidden">
-                        <img  class="z-100" src="${product.image}" alt="">
-                        <!-- Tag -->
+                        <img class="product-image absolute inset-0 w-full h-full object-cover" src="${product.image}" alt="${product.name}">
                         <div class="absolute top-4 left-4 z-10">
-                            <span class="px-3 py-1 ${product.tag === 'Sale' ? 'bg-heritage-terracotta' : product.tag === 'New' ? 'bg-heritage-green' : product.tag === 'Limited' || product.tag === 'Exclusive' ? 'bg-heritage-brown' : 'bg-heritage-gold'} text-white text-xs font-body tracking-wider rounded-full">
+                            <span class="px-3 py-1 ${product.tag === "New" ? "bg-heritage-green" : product.tag === "Limited" ? "bg-heritage-brown" : "bg-heritage-gold"} text-white text-xs font-body tracking-wider rounded-full">
                                 ${product.tag.toUpperCase()}
                             </span>
                         </div>
-                        <!-- Wishlist -->
                         <button onclick="toggleWishlist(this)" class="wishlist-btn absolute top-4 right-4 z-10 w-9 h-9 bg-white/90 rounded-full flex items-center justify-center shadow-sm">
                             <svg class="w-4 h-4 text-heritage-brown/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                             </svg>
                         </button>
-                        <!-- Quick Add -->
                         <div class="quick-add absolute bottom-4 left-4 right-4 z-10">
                             <button onclick="quickAdd(${product.id})" class="w-full bg-white/95 backdrop-blur-sm text-heritage-brown py-3 rounded-xl font-body text-sm font-semibold tracking-wider hover:bg-heritage-gold hover:text-white transition-all shadow-lg">
                                 ADD TO BAG
                             </button>
                         </div>
                     </div>
-                    <!-- Info -->
                     <div class="p-5">
-                        <p class="font-body text-xs text-heritage-brown/40 tracking-wider uppercase mb-1">${product.category === 'aso-oke' ? 'Aso-Oke' : product.category.charAt(0).toUpperCase() + product.category.slice(1)}</p>
+                        <p class="font-body text-xs text-heritage-brown/40 tracking-wider uppercase mb-1">${product.category === "aso-oke" ? "Aso-Oke" : product.category.charAt(0).toUpperCase() + product.category.slice(1)}</p>
                         <h3 class="font-display font-semibold text-lg mb-2 leading-snug">${product.name}</h3>
                         <div class="flex items-center gap-2">
                             <span class="font-body font-bold text-heritage-gold text-lg">${formatPrice(product.price)}</span>
-                            ${product.originalPrice ? `<span class="font-body text-sm text-heritage-brown/40 line-through">${formatPrice(product.originalPrice)}</span>` : ''}
+                            ${product.originalPrice ? `<span class="font-body text-sm text-heritage-brown/40 line-through">${formatPrice(product.originalPrice)}</span>` : ""}
                         </div>
-                        <!-- Sizes -->
-                        <div class="flex gap-1.5 mt-3">
-                            ${product.sizes.map(s => `<span class="text-[10px] font-body text-heritage-brown/50 border border-heritage-brown/10 px-2 py-0.5 rounded">${s}</span>`).join('')}
+                        <div class="mt-4">
+                            <p class="font-body text-[10px] text-heritage-brown/50 uppercase tracking-wider mb-2">Select size</p>
+                            <div class="flex flex-wrap gap-1.5 size-group" data-id="${product.id}">
+                                ${product.sizes
+                                    .map(
+                                        (s, i) => `
+                                    <button type="button" class="size-btn ${i === 0 ? "active" : ""} h-8 min-w-8 px-2.5 rounded-lg border border-heritage-brown/15 font-body text-[11px] font-bold" data-size="${s}">${s}</button>
+                                `
+                                    )
+                                    .join("")}
+                            </div>
                         </div>
                     </div>
                 </div>
-            `).join('');
+            `
+                )
+                .join("");
+
+            resultCount.textContent = `Showing ${filtered.length} ${filtered.length === 1 ? "style" : "styles"}`;
+            emptyState.classList.toggle("hidden", filtered.length !== 0);
         }
 
-        // Filter Products
-        function filterProducts(filter) {
-            // Update button styles
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                if (btn.dataset.filter === filter) {
-                    btn.classList.add('bg-heritage-gold', 'text-white', 'border-heritage-gold');
-                    btn.classList.remove('text-heritage-brown/60', 'border-heritage-brown/20');
-                } else {
-                    btn.classList.remove('bg-heritage-gold', 'text-white', 'border-heritage-gold');
-                    btn.classList.add('text-heritage-brown/60', 'border-heritage-brown/20');
-                }
-            });
-            renderProducts(filter);
+        function getSelectedSize(productId) {
+            const group = document.querySelector(`.size-group[data-id="${productId}"]`);
+            const active = group ? group.querySelector(".size-btn.active") : null;
+            return active ? active.dataset.size : null;
         }
 
-        // Add to Cart
-        function addToCart(productId) {
-            const product = products.find(p => p.id === productId);
-            const existingItem = cart.find(item => item.id === productId);
+        // ---- CART ----
+        function addToCart(productId, size) {
+            const product = products.find((p) => p.id === productId);
+            if (!product) return;
+
+            const selectedSize = size || getSelectedSize(productId) || product.sizes[0];
+            const existingItem = cart.find((item) => item.id === productId && item.size === selectedSize);
 
             if (existingItem) {
                 existingItem.quantity += 1;
             } else {
-                cart.push({ ...product, quantity: 1 });
+                cart.push({ ...product, size: selectedSize, quantity: 1 });
             }
 
             updateCartUI();
-            showToast(`${product.name} added to bag!`);
+            showToast(`${product.name} (${selectedSize}) added to bag!`);
         }
 
-        // Quick Add
         function quickAdd(productId) {
             addToCart(productId);
         }
 
-        // Remove from Cart
-        function removeFromCart(productId) {
-            cart = cart.filter(item => item.id !== productId);
+        function removeFromCart(productId, size) {
+            cart = cart.filter((item) => !(item.id === productId && item.size === size));
             updateCartUI();
         }
 
-        // Update Quantity
-        function updateQuantity(productId, change) {
-            const item = cart.find(item => item.id === productId);
+        function updateQuantity(productId, size, change) {
+            const item = cart.find((item) => item.id === productId && item.size === size);
             if (item) {
                 item.quantity += change;
                 if (item.quantity <= 0) {
-                    removeFromCart(productId);
+                    removeFromCart(productId, size);
                     return;
                 }
             }
             updateCartUI();
         }
 
-        // Update Cart UI
         function updateCartUI() {
-            const cartCount = document.getElementById('cart-count');
-            const cartHeaderCount = document.getElementById('cart-header-count');
-            const cartItems = document.getElementById('cart-items');
-            const emptyCart = document.getElementById('empty-cart');
-            const cartFooter = document.getElementById('cart-footer');
-            const cartSubtotal = document.getElementById('cart-subtotal');
-            const cartTotal = document.getElementById('cart-total');
+            const cartCount = document.getElementById("cart-count");
+            const cartHeaderCount = document.getElementById("cart-header-count");
+            const cartItems = document.getElementById("cart-items");
+            const emptyCart = document.getElementById("empty-cart");
+            const cartFooter = document.getElementById("cart-footer");
+            const cartSubtotal = document.getElementById("cart-subtotal");
+            const cartTotal = document.getElementById("cart-total");
 
             const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-            // Update count badge
             if (totalItems > 0) {
                 cartCount.textContent = totalItems;
-                cartCount.classList.remove('hidden');
-                cartCount.classList.add('cart-badge');
+                cartCount.classList.remove("hidden");
+                cartCount.classList.add("cart-badge");
             } else {
-                cartCount.classList.add('hidden');
-                cartCount.classList.remove('cart-badge');
+                cartCount.classList.add("hidden");
+                cartCount.classList.remove("cart-badge");
             }
             cartHeaderCount.textContent = totalItems;
 
-            // Update cart items
             if (cart.length === 0) {
-                emptyCart.classList.remove('hidden');
-                cartFooter.classList.add('hidden');
-                // Remove all cart item elements but keep empty state
-                const itemElements = cartItems.querySelectorAll('.cart-item');
-                itemElements.forEach(el => el.remove());
+                emptyCart.classList.remove("hidden");
+                cartFooter.classList.add("hidden");
+                cartItems.querySelectorAll(".cart-item").forEach((el) => el.remove());
             } else {
-                emptyCart.classList.add('hidden');
-                cartFooter.classList.remove('hidden');
+                emptyCart.classList.add("hidden");
+                cartFooter.classList.remove("hidden");
+                cartItems.querySelectorAll(".cart-item").forEach((el) => el.remove());
 
-                // Remove existing items
-                const itemElements = cartItems.querySelectorAll('.cart-item');
-                itemElements.forEach(el => el.remove());
-
-                // Add cart items
-                cart.forEach(item => {
-                    const itemEl = document.createElement('div');
-                    itemEl.className = 'cart-item flex gap-4 animate-fadeIn';
+                cart.forEach((item) => {
+                    const itemEl = document.createElement("div");
+                    itemEl.className = "cart-item flex gap-4 animate-fadeIn";
                     itemEl.innerHTML = `
-                        <div class="w-20 h-fit  adire-overlay rounded-xl flex-shrink-0"><img class="h-24" src="${item.image}" alt=""></div>
+                        <div class="w-20 h-24 rounded-xl flex-shrink-0 overflow-hidden ${item.pattern} adire-overlay">
+                            <img class="w-full h-full object-cover" src="${item.image}" alt="${item.name}">
+                        </div>
                         <div class="flex-1 min-w-0">
-                            
                             <h4 class="font-display font-semibold text-sm leading-snug truncate">${item.name}</h4>
-                            <p class="font-body text-xs text-heritage-brown/50 mt-0.5">${item.category.charAt(0).toUpperCase() + item.category.slice(1)}</p>
+                            <p class="font-body text-xs text-heritage-brown/50 mt-0.5">${item.category.charAt(0).toUpperCase() + item.category.slice(1)} • Size ${item.size}</p>
                             <p class="font-body font-bold text-heritage-gold mt-1">${formatPrice(item.price)}</p>
                             <div class="flex items-center justify-between mt-2">
                                 <div class="flex items-center gap-0 border border-heritage-brown/10 rounded-lg overflow-hidden">
-                                    <button onclick="updateQuantity(${item.id}, -1)" class="qty-btn w-8 h-8 flex items-center justify-center text-heritage-brown/60 hover:bg-heritage-gold hover:text-white transition-all">
+                                    <button onclick="updateQuantity(${item.id}, '${item.size}', -1)" class="qty-btn w-8 h-8 flex items-center justify-center text-heritage-brown/60 hover:bg-heritage-gold hover:text-white transition-all">
                                         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
                                         </svg>
                                     </button>
                                     <span class="w-8 h-8 flex items-center justify-center font-body text-sm font-semibold">${item.quantity}</span>
-                                    <button onclick="updateQuantity(${item.id}, 1)" class="qty-btn w-8 h-8 flex items-center justify-center text-heritage-brown/60 hover:bg-heritage-gold hover:text-white transition-all">
+                                    <button onclick="updateQuantity(${item.id}, '${item.size}', 1)" class="qty-btn w-8 h-8 flex items-center justify-center text-heritage-brown/60 hover:bg-heritage-gold hover:text-white transition-all">
                                         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
                                         </svg>
                                     </button>
                                 </div>
-                                <button onclick="removeFromCart(${item.id})" class="p-1.5 text-heritage-brown/30 hover:text-heritage-terracotta transition-colors">
+                                <button onclick="removeFromCart(${item.id}, '${item.size}')" class="p-1.5 text-heritage-brown/30 hover:text-heritage-terracotta transition-colors">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
                                     </svg>
@@ -1212,51 +1381,47 @@
             }
         }
 
-        // Toggle Cart
         function toggleCart() {
-            const overlay = document.getElementById('cart-overlay');
-            const sidebar = document.getElementById('cart-sidebar');
-            const isOpen = sidebar.classList.contains('open');
+            const overlay = document.getElementById("cart-overlay");
+            const sidebar = document.getElementById("cart-sidebar");
+            const isOpen = sidebar.classList.contains("open");
 
             if (isOpen) {
-                overlay.classList.add('opacity-0', 'pointer-events-none');
-                sidebar.classList.remove('open');
-                document.body.style.overflow = '';
+                overlay.classList.add("opacity-0", "pointer-events-none");
+                sidebar.classList.remove("open");
+                document.body.style.overflow = "";
             } else {
-                overlay.classList.remove('opacity-0', 'pointer-events-none');
-                sidebar.classList.add('open');
-                document.body.style.overflow = 'hidden';
+                overlay.classList.remove("opacity-0", "pointer-events-none");
+                sidebar.classList.add("open");
+                document.body.style.overflow = "hidden";
             }
         }
 
-        // Toggle Mobile Menu
         function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
-            const isOpen = menu.style.maxHeight && menu.style.maxHeight !== '0px';
+            const menu = document.getElementById("mobile-menu");
+            const menuIcon = document.getElementById("menu-icon");
+            const closeIcon = document.getElementById("close-icon");
+            const isOpen = menu.style.maxHeight && menu.style.maxHeight !== "0px";
 
             if (isOpen) {
-                menu.style.maxHeight = '0px';
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
+                menu.style.maxHeight = "0px";
+                menuIcon.classList.remove("hidden");
+                closeIcon.classList.add("hidden");
             } else {
-                menu.style.maxHeight = '300px';
-                menuIcon.classList.add('hidden');
-                closeIcon.classList.remove('hidden');
+                menu.style.maxHeight = "300px";
+                menuIcon.classList.add("hidden");
+                closeIcon.classList.remove("hidden");
             }
         }
 
-        // Toggle Wishlist
         function toggleWishlist(btn) {
-            btn.classList.toggle('active');
+            btn.classList.toggle("active");
         }
 
-        // Show Toast
         function showToast(message) {
-            const container = document.getElementById('toast-container');
-            const toast = document.createElement('div');
-            toast.className = 'toast bg-heritage-brown text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3 max-w-sm';
+            const container = document.getElementById("toast-container");
+            const toast = document.createElement("div");
+            toast.className = "toast bg-heritage-brown text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3 max-w-sm";
             toast.innerHTML = `
                 <div class="w-8 h-8 bg-heritage-gold rounded-full flex items-center justify-center flex-shrink-0">
                     <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -1269,47 +1434,103 @@
             setTimeout(() => toast.remove(), 2800);
         }
 
-        // Handle Newsletter Subscribe
         function handleSubscribe(e) {
             e.preventDefault();
-            const input = e.target.querySelector('input');
-            showToast('Welcome to the Heritage family! 🎉');
-            input.value = '';
+            const input = e.target.querySelector("input");
+            showToast("Welcome to the Heritage family! 🎉");
+            input.value = "";
         }
 
-        // Checkout
         function checkout() {
             if (cart.length === 0) return;
-            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
             showToast(`Order placed! Total: ${formatPrice(total)} 🎉`);
             cart = [];
             updateCartUI();
             setTimeout(() => toggleCart(), 1000);
         }
 
+        // ---- CATEGORY CARDS (hero showcase) jump into the filtered grid ----
+        function filterByCategory(category) {
+            state.category = category;
+            document.querySelectorAll(".filter-chip").forEach((chip) => {
+                chip.classList.toggle("active", chip.dataset.category === category);
+            });
+            renderProducts();
+            document.getElementById("shop-grid").scrollIntoView({ behavior: "smooth" });
+        }
+
+        // ---- EVENT DELEGATION for dynamically-rendered cards ----
+        document.addEventListener("click", (event) => {
+            const sizeBtn = event.target.closest(".size-btn");
+            if (sizeBtn) {
+                const group = sizeBtn.closest(".size-group");
+                group.querySelectorAll(".size-btn").forEach((b) => b.classList.remove("active"));
+                sizeBtn.classList.add("active");
+            }
+
+            const chip = event.target.closest(".filter-chip");
+            if (chip) {
+                document.querySelectorAll(".filter-chip").forEach((c) => c.classList.remove("active"));
+                chip.classList.add("active");
+                state.category = chip.dataset.category;
+                renderProducts();
+            }
+        });
+
+        document.getElementById("searchInput").addEventListener("input", (event) => {
+            state.query = event.target.value;
+            renderProducts();
+        });
+
+        document.getElementById("sortSelect").addEventListener("change", (event) => {
+            state.sort = event.target.value;
+            renderProducts();
+        });
+
+        document.getElementById("sizeFilter").addEventListener("change", (event) => {
+            state.size = event.target.value;
+            renderProducts();
+        });
+
+        document.getElementById("clearFilters").addEventListener("click", () => {
+            state.category = "all";
+            state.query = "";
+            state.sort = "featured";
+            state.size = "all";
+            document.getElementById("searchInput").value = "";
+            document.getElementById("sortSelect").value = "featured";
+            document.getElementById("sizeFilter").value = "all";
+            document.querySelectorAll(".filter-chip").forEach((c) => c.classList.toggle("active", c.dataset.category === "all"));
+            renderProducts();
+        });
+
         // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
+        window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("navbar");
             if (window.scrollY > 50) {
-                navbar.classList.add('navbar-scrolled');
+                navbar.classList.add("navbar-scrolled");
             } else {
-                navbar.classList.remove('navbar-scrolled');
+                navbar.classList.remove("navbar-scrolled");
             }
         });
 
         // Intersection Observer for reveal animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+        document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
         // Initialize
         renderProducts();
+        updateCartUI();
     </script>
 
 </body>
