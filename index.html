@@ -584,7 +584,7 @@
                 <!-- Category 3 -->
                 <div class="category-card rounded-2xl h-80 relative group">
                     <div class="category-img absolute inset-0 pattern-5 adire-overlay rounded-2xl"></div>
-                    <div class="bg-[url('images/aso%20oke.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 z-100">
+                    <div class="bg-[url('images/asooke.png')] bg-cover bg-top h-80 absolute bottom-0 left-0 right-0 p-6 z-100">
                         <h3 class="font-display text-2xl font-bold text-white mb-1">Aso-Oke Sets</h3>
                         <p class="text-white/70 text-sm font-body">12 Pieces</p>
                         <div class="mt-3 flex items-center gap-2 text-heritage-gold text-sm font-body opacity-0 group-hover:opacity-100 transition-opacity">
@@ -978,6 +978,7 @@
             {
                 id: 1,
                 name: "Royal Ankara Midi Dress",
+                image: "images/Fashionable%20Attire%20Display.png",
                 price: 35000,
                 originalPrice: 45000,
                 category: "ankara",
@@ -989,6 +990,7 @@
             {
                 id: 2,
                 name: "Emerald Kaftan Royale",
+                image: "images/Elegant%20Traditional%20Attire.png",
                 price: 42000,
                 originalPrice: null,
                 category: "kaftan",
@@ -999,6 +1001,7 @@
             },
             {
                 id: 3,
+                image: "images/asooke.png",
                 name: "Aso-Oke Wedding Gown",
                 price: 85000,
                 originalPrice: 95000,
@@ -1010,7 +1013,8 @@
             },
             {
                 id: 4,
-                name: "Golden Hour Blazer Dress",
+                name: "Beautiful Tri-colored Bubu",
+                image: "images/Elegant%20Fusion%20Attire.png",
                 price: 38000,
                 originalPrice: null,
                 category: "fusion",
@@ -1036,8 +1040,8 @@
             
             grid.innerHTML = filtered.map((product, index) => `
                 <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm" data-category="${product.category}" style="animation: fadeInUp 0.6s ease forwards; animation-delay: ${index * 0.1}s; opacity: 0;">
-                    <!-- Image -->
                     <div class="relative h-72 ${product.pattern} adire-overlay overflow-hidden">
+                        <img  class="z-100" src="${product.image}" alt="">
                         <!-- Tag -->
                         <div class="absolute top-4 left-4 z-10">
                             <span class="px-3 py-1 ${product.tag === 'Sale' ? 'bg-heritage-terracotta' : product.tag === 'New' ? 'bg-heritage-green' : product.tag === 'Limited' || product.tag === 'Exclusive' ? 'bg-heritage-brown' : 'bg-heritage-gold'} text-white text-xs font-body tracking-wider rounded-full">
